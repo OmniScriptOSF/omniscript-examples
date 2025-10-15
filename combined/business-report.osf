@@ -1,0 +1,493 @@
+// =============================================================================
+// Example: Business Report
+// Category: Combined
+// Description: Comprehensive business report with docs, slides, and data
+// Features: All block types in one file, professional business content
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "Q3 2025 Business Review";
+  author: "Executive Team";
+  date: "2025-10-15";
+  version: "1.0";
+  theme: corporate;
+}
+
+// ============================================================================
+// DOCUMENT SECTION: Executive Summary
+// ============================================================================
+
+@doc {
+  # Q3 2025 Business Review
+  ## Executive Summary
+  
+  **Report Period**: July 1 - September 30, 2025  
+  **Prepared by**: Executive Leadership Team  
+  **Date**: October 15, 2025
+  
+  ---
+  
+  ## Overview
+  
+  Q3 2025 was a strong quarter for the company, with **record revenue** and **significant product launches**. We exceeded targets in most key areas while maintaining operational efficiency.
+  
+  ### Key Highlights
+  
+  - **Revenue**: $52.3M (+28% YoY)
+  - **New Customers**: 1,247 (+35% YoY)
+  - **Customer Retention**: 94% (target: 92%)
+  - **Product Launches**: 3 major features released
+  - **Team Growth**: 48 new hires across all departments
+  
+  ### Strategic Achievements
+  
+  1. **Market Expansion**: Launched in APAC region with strong initial traction
+  2. **Product Innovation**: Released AI-powered analytics dashboard
+  3. **Partnership**: Signed strategic alliance with GlobalTech Inc.
+  4. **Efficiency**: Reduced customer acquisition cost by 15%
+  
+  ---
+  
+  ## Financial Performance
+  
+  ### Revenue Growth
+  
+  Q3 revenue of **$52.3M** represents 28% year-over-year growth and 12% quarter-over-quarter growth. This performance exceeded our target of $50M.
+  
+  **Revenue Breakdown:**
+  
+  - Subscription Revenue: $45.2M (86% of total)
+  - Professional Services: $5.1M (10%)
+  - Other Revenue: $2.0M (4%)
+  
+  ### Profitability
+  
+  - **Gross Margin**: 72% (vs. 70% target)
+  - **Operating Margin**: 18% (vs. 15% target)
+  - **Net Income**: $6.8M (13% margin)
+  - **EBITDA**: $9.4M (18% margin)
+  
+  ---
+  
+  ## Customer Metrics
+  
+  ### Customer Acquisition
+  
+  We added **1,247 new customers** in Q3, bringing total customer count to **12,458**. This represents 35% YoY growth in customer base.
+  
+  **Customer Segmentation:**
+  
+  - Enterprise (>1000 users): 342 customers (42% of revenue)
+  - Mid-Market (100-999 users): 1,856 customers (38% of revenue)
+  - Small Business (<100 users): 10,260 customers (20% of revenue)
+  
+  ### Customer Success
+  
+  - **Retention Rate**: 94% (up from 92% in Q2)
+  - **Net Promoter Score**: 67 (world-class)
+  - **Support Response Time**: avg 2.3 hours (target: <4 hours)
+  - **Customer Satisfaction**: 4.6/5.0 stars
+  
+  ---
+  
+  ## Product Development
+  
+  ### Major Releases
+  
+  1. **AI Analytics Dashboard** (July)
+     - Predictive insights using machine learning
+     - 78% of customers activated within first month
+     - Average 4.2 hours saved per week per user
+  
+  2. **Mobile App v3.0** (August)
+     - Complete UI redesign
+     - Offline mode support
+     - 4.8/5 stars in app stores
+  
+  3. **API v2.0** (September)
+     - 3x faster performance
+     - 50+ new endpoints
+     - Comprehensive documentation
+  
+  ### Product Roadmap
+  
+  **Q4 2025 Priorities:**
+  
+  - Advanced reporting module
+  - Third-party integrations marketplace
+  - Enterprise SSO enhancements
+  - Real-time collaboration features
+  
+  ---
+  
+  ## Sales & Marketing
+  
+  ### Sales Performance
+  
+  - **Pipeline**: $87M (up 45% from Q2)
+  - **Win Rate**: 32% (vs. 28% target)
+  - **Average Deal Size**: $42K (up from $38K)
+  - **Sales Cycle**: 47 days (down from 52 days)
+  
+  ### Marketing Results
+  
+  - **Website Traffic**: 2.8M visits (up 62%)
+  - **Leads Generated**: 8,450 (up 48%)
+  - **Conversion Rate**: 3.2% (up from 2.8%)
+  - **Cost Per Acquisition**: $425 (down 15%)
+  
+  ### Campaign Highlights
+  
+  - Launched "Transform Your Workflow" campaign
+  - Published 12 customer case studies
+  - Attended 4 major industry conferences
+  - Webinar series attracted 5,000+ attendees
+  
+  ---
+  
+  ## Operations
+  
+  ### Team Growth
+  
+  Added **48 new team members** across all departments:
+  
+  - Engineering: 22 hires
+  - Sales: 12 hires
+  - Customer Success: 8 hires
+  - Marketing: 4 hires
+  - Operations: 2 hires
+  
+  Total headcount: **312 employees** (vs. 264 in Q2)
+  
+  ### Infrastructure
+  
+  - **Uptime**: 99.98% (target: 99.95%)
+  - **P50 Latency**: 18ms (target: <25ms)
+  - **P99 Latency**: 95ms (target: <150ms)
+  - **Zero** security incidents
+  
+  ---
+  
+  ## Challenges & Risks
+  
+  ### Identified Challenges
+  
+  1. **Competition**: Increased activity from well-funded competitor
+  2. **Hiring**: Tight talent market for senior engineers
+  3. **Scaling**: Infrastructure costs growing faster than revenue
+  4. **Churn**: Higher churn in small business segment
+  
+  ### Mitigation Plans
+  
+  1. Accelerate product differentiation roadmap
+  2. Enhance employer brand and referral program
+  3. Optimize cloud infrastructure and introduce tiered pricing
+  4. Improve onboarding experience for small business customers
+  
+  ---
+  
+  ## Q4 2025 Outlook
+  
+  ### Targets
+  
+  - **Revenue**: $58M (+11% QoQ)
+  - **New Customers**: 1,400
+  - **Product Releases**: 2 major features
+  - **Team Growth**: 35 new hires
+  - **Profitability**: Maintain 18% operating margin
+  
+  ### Strategic Priorities
+  
+  1. **Revenue Acceleration**: Focus on enterprise segment
+  2. **Product Excellence**: Deliver roadmap on schedule
+  3. **Customer Success**: Improve retention in SMB segment
+  4. **Operational Efficiency**: Optimize cost structure
+  5. **Team Development**: Strengthen leadership bench
+  
+  ---
+  
+  ## Conclusion
+  
+  Q3 2025 was an exceptional quarter that positions us well for continued growth. The combination of strong financial performance, successful product launches, and operational excellence demonstrates the team's ability to execute at scale.
+  
+  As we head into Q4, we remain focused on sustainable growth, customer success, and building a world-class organization.
+}
+
+// ============================================================================
+// PRESENTATION SECTION: Executive Presentation
+// ============================================================================
+
+@slide {
+  title: "Q3 2025 Business Review";
+  layout: TitleOnly;
+}
+
+@slide {
+  title: "Q3 At a Glance";
+  layout: TitleAndContent;
+  
+  ## Record-Breaking Quarter
+  
+  - 💰 **Revenue**: $52.3M (+28% YoY)
+  - 👥 **New Customers**: 1,247 (+35% YoY)
+  - ❤️ **Retention**: 94% (target: 92%)
+  - 🚀 **Products**: 3 major launches
+  - 🎯 **NPS**: 67 (world-class)
+  
+  *Exceeded all key targets for the quarter*
+}
+
+@slide {
+  title: "Revenue Trend";
+  layout: TitleAndContent;
+  
+  ## Strong Growth Trajectory
+  
+  | Quarter | Revenue | Growth |
+  |---------|---------|--------|
+  | Q1 2025 | $43.2M | +22% |
+  | Q2 2025 | $46.7M | +24% |
+  | Q3 2025 | $52.3M | +28% |
+  | Q4 2025 (Target) | $58.0M | +30% |
+  
+  **Key Driver**: Expansion in Enterprise segment
+}
+
+@slide {
+  title: "Customer Growth";
+  layout: TwoColumn;
+  
+  ## New Customers
+  
+  **Q3 Additions**: 1,247
+  
+  - Enterprise: 127
+  - Mid-Market: 356
+  - Small Business: 764
+  
+  **Total**: 12,458 customers
+  
+  ## Retention
+  
+  **Q3 Rate**: 94%
+  
+  - Up from 92% in Q2
+  - Industry average: 88%
+  - Target: 92%
+  
+  🎯 **Best-in-class retention**
+}
+
+@slide {
+  title: "Product Launches";
+  layout: TitleAndContent;
+  
+  ## Three Major Releases
+  
+  ### 🤖 AI Analytics Dashboard
+  78% activation rate, 4.2 hours saved/week
+  
+  ### 📱 Mobile App v3.0
+  4.8/5 stars, 50K+ downloads
+  
+  ### ⚡ API v2.0
+  3x faster, 50+ new endpoints
+  
+  *All releases delivered on time with high quality*
+}
+
+@slide {
+  title: "Q4 Priorities";
+  layout: TitleAndContent;
+  
+  ## Strategic Focus Areas
+  
+  1. **Revenue Acceleration**
+     - Target: $58M (+11% QoQ)
+     - Focus on Enterprise deals
+  
+  2. **Product Excellence**
+     - Advanced reporting module
+     - Integration marketplace
+  
+  3. **Operational Efficiency**
+     - Optimize infrastructure costs
+     - Streamline processes
+  
+  4. **Team Development**
+     - 35 strategic hires
+     - Leadership training
+}
+
+// ============================================================================
+// SPREADSHEET SECTION: Financial Data
+// ============================================================================
+
+@sheet {
+  name: "Q3 Financial Summary";
+  cols: [Metric, Q1, Q2, Q3, Target, Variance];
+  
+  A1 = "Metric";
+  B1 = "Q1 2025";
+  C1 = "Q2 2025";
+  D1 = "Q3 2025";
+  E1 = "Q3 Target";
+  F1 = "Variance";
+  
+  A2 = "Revenue ($M)";
+  B2 = 43.2;
+  C2 = 46.7;
+  D2 = 52.3;
+  E2 = 50.0;
+  F2 = =D2-E2;
+  
+  A3 = "Gross Margin (%)";
+  B3 = 70;
+  C3 = 71;
+  D3 = 72;
+  E3 = 70;
+  F3 = =D3-E3;
+  
+  A4 = "Operating Margin (%)";
+  B4 = 14;
+  C4 = 16;
+  D4 = 18;
+  E4 = 15;
+  F4 = =D4-E4;
+  
+  A5 = "New Customers";
+  B5 = 982;
+  C5 = 1104;
+  D5 = 1247;
+  E5 = 1150;
+  F5 = =D5-E5;
+  
+  A6 = "Total Customers";
+  B6 = 10107;
+  C6 = 11211;
+  D6 = 12458;
+  E6 = 12350;
+  F6 = =D6-E6;
+  
+  A7 = "Retention Rate (%)";
+  B7 = 91;
+  C7 = 92;
+  D7 = 94;
+  E7 = 92;
+  F7 = =D7-E7;
+  
+  A8 = "NPS";
+  B8 = 64;
+  C8 = 66;
+  D8 = 67;
+  E8 = 65;
+  F8 = =D8-E8;
+  
+  A9 = "Headcount";
+  B9 = 227;
+  C9 = 264;
+  D9 = 312;
+  E9 = 300;
+  F9 = =D9-E9;
+}
+
+@sheet {
+  name: "Revenue by Segment";
+  cols: [Segment, Q1, Q2, Q3, Percent of Total];
+  
+  A1 = "Segment";
+  B1 = "Q1 2025";
+  C1 = "Q2 2025";
+  D1 = "Q3 2025";
+  E1 = "% of Q3";
+  
+  A2 = "Subscription";
+  B2 = 37.2;
+  C2 = 40.1;
+  D2 = 45.2;
+  E2 = =D2/52.3*100;
+  
+  A3 = "Professional Services";
+  B3 = 4.5;
+  C3 = 4.8;
+  D3 = 5.1;
+  E3 = =D3/52.3*100;
+  
+  A4 = "Other";
+  B4 = 1.5;
+  C4 = 1.8;
+  D4 = 2.0;
+  E4 = =D4/52.3*100;
+  
+  A6 = "TOTAL";
+  B6 = =SUM(B2:B4);
+  C6 = =SUM(C2:C4);
+  D6 = =SUM(D2:D4);
+  E6 = =SUM(E2:E4);
+}
+
+@sheet {
+  name: "Customer Metrics";
+  cols: [Category, Enterprise, Mid-Market, Small Business, Total];
+  
+  A1 = "Category";
+  B1 = "Enterprise";
+  C1 = "Mid-Market";
+  D1 = "Small Business";
+  E1 = "Total";
+  
+  A2 = "Customers";
+  B2 = 342;
+  C2 = 1856;
+  D2 = 10260;
+  E2 = =B2+C2+D2;
+  
+  A3 = "% of Revenue";
+  B3 = 42;
+  C3 = 38;
+  D3 = 20;
+  E3 = =B3+C3+D3;
+  
+  A4 = "Avg Revenue ($K)";
+  B4 = 64.2;
+  C4 = 10.7;
+  D4 = 1.02;
+  E4 = =B4+C4+D4;
+  
+  A5 = "Retention (%)";
+  B5 = 97;
+  C5 = 95;
+  D5 = 91;
+  E5 = =AVERAGE(B5:D5);
+  
+  A6 = "Q3 Additions";
+  B6 = 127;
+  C6 = 356;
+  D6 = 764;
+  E6 = =B6+C6+D6;
+}
+
+@doc {
+  # Financial Data Notes
+  
+  ## Data Sources
+  
+  All financial data is sourced from:
+  
+  - **Revenue**: Financial reporting system (NetSuite)
+  - **Customer Metrics**: CRM (Salesforce)
+  - **Product Metrics**: Analytics platform (Amplitude)
+  - **Operational Metrics**: Monitoring dashboard (Datadog)
+  
+  ## Methodology
+  
+  - **YoY Growth**: Calculated as (Current Quarter - Same Quarter Last Year) / Same Quarter Last Year
+  - **QoQ Growth**: Calculated as (Current Quarter - Previous Quarter) / Previous Quarter
+  - **Retention Rate**: (Customers at End of Period - New Customers) / Customers at Start of Period
+  - **NPS**: Net Promoter Score based on monthly customer surveys
+  
+  ## Data Quality
+  
+  All figures have been reviewed and approved by Finance team. Variance analysis completed for all metrics showing >5% deviation from target.
+}

@@ -1,0 +1,284 @@
+// =============================================================================
+// Example: Business Pitch
+// Category: Presentations
+// Description: Corporate pitch deck for investor presentation
+// Features: Professional slides, data presentation, business content
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "CloudSync: Enterprise File Synchronization";
+  author: "CloudSync Team";
+  date: "2025-10-15";
+  theme: corporate;
+}
+
+@slide {
+  title: "CloudSync";
+  layout: TitleOnly;
+}
+
+@slide {
+  title: "The Problem";
+  layout: TitleAndContent;
+  
+  ## Enterprises Struggle with File Management
+  
+  - **$480B** lost annually due to poor document management
+  - **67%** of workers can't find files they need
+  - **45 minutes/day** wasted searching for documents
+  - **Security risks** from unauthorized file sharing
+  
+  *"Finding the right version of a document is like finding a needle in a haystack"*
+  — CTO, Fortune 500 Company
+}
+
+@slide {
+  title: "Introducing CloudSync";
+  layout: TitleAndContent;
+  
+  ## Enterprise-Grade File Synchronization Platform
+  
+  **CloudSync** provides:
+  
+  ✅ **Real-time sync** across all devices  
+  ✅ **Version control** with automatic backups  
+  ✅ **Enterprise security** with end-to-end encryption  
+  ✅ **AI-powered search** to find files instantly  
+  ✅ **Compliance** with GDPR, HIPAA, SOC 2
+}
+
+@slide {
+  title: "How It Works";
+  layout: TwoColumn;
+  
+  ## For Users
+  
+  1. Install CloudSync client
+  2. Select folders to sync
+  3. Files automatically backed up
+  4. Access from anywhere
+  5. Search using natural language
+  
+  ## For IT Teams
+  
+  1. Deploy via MSI/DMG
+  2. Configure policies centrally
+  3. Monitor usage dashboard
+  4. Set retention rules
+  5. Audit access logs
+}
+
+@slide {
+  title: "Key Features";
+  layout: TitleAndContent;
+  
+  ## What Makes CloudSync Different
+  
+  ### 🚀 Blazing Fast
+  Delta sync technology - only changed bytes transferred
+  
+  ### 🔒 Bank-Level Security
+  AES-256 encryption, zero-knowledge architecture
+  
+  ### 🤖 AI-Powered Search
+  "Find the Q3 budget John sent last week" → Instant results
+  
+  ### 📊 Deep Analytics
+  Usage insights, compliance reporting, cost tracking
+  
+  ### 🔌 Integrations
+  Microsoft 365, Google Workspace, Slack, and 50+ apps
+}
+
+@slide {
+  title: "Market Opportunity";
+  layout: TitleAndContent;
+  
+  ## Massive and Growing Market
+  
+  - **$85B** Enterprise file sync market (2025)
+  - **18% CAGR** through 2030
+  - **500M+** knowledge workers worldwide
+  - **Remote work trend** accelerating adoption
+  
+  ### Target Customers
+  
+  - Mid-market enterprises (500-5000 employees)
+  - Industries: Finance, Healthcare, Legal, Tech
+  - Current pain: Using consumer tools for business
+}
+
+@slide {
+  title: "Competitive Landscape";
+  layout: TwoColumn;
+  
+  ## Traditional Players
+  
+  **Dropbox Business**
+  - Consumer-focused
+  - Limited enterprise features
+  - No AI search
+  
+  **Box**
+  - Complex setup
+  - Expensive
+  - Poor user experience
+  
+  ## CloudSync Advantage
+  
+  ✅ Enterprise-first design  
+  ✅ Simple deployment  
+  ✅ AI-powered features  
+  ✅ 40% lower cost  
+  ✅ Superior UX  
+  ✅ 24/7 support included
+}
+
+@slide {
+  title: "Business Model";
+  layout: TitleAndContent;
+  
+  ## SaaS Subscription Pricing
+  
+  ### Starter
+  **$12** per user/month
+  - 1TB storage per user
+  - Basic sync and backup
+  - Email support
+  
+  ### Professional
+  **$24** per user/month
+  - Unlimited storage
+  - AI search
+  - Version history (1 year)
+  - Priority support
+  
+  ### Enterprise
+  **Custom** pricing
+  - Advanced security
+  - Dedicated support
+  - Custom integrations
+  - SLA guarantee
+}
+
+@slide {
+  title: "Traction";
+  layout: TitleAndContent;
+  
+  ## Strong Early Momentum
+  
+  - **250** paying customers (8 months)
+  - **$1.2M** ARR (Annual Recurring Revenue)
+  - **15%** month-over-month growth
+  - **92%** customer retention rate
+  - **Net Promoter Score**: 68 (World-class)
+  
+  ### Notable Customers
+  
+  - TechCorp (2,500 users)
+  - FinanceHub (1,200 users)
+  - LegalEagle (800 users)
+  - MedTech Solutions (600 users)
+}
+
+@slide {
+  title: "The Team";
+  layout: TwoColumn;
+  
+  ## Leadership
+  
+  **Sarah Chen** - CEO
+  - Ex-Dropbox Product Lead
+  - 15 years enterprise software
+  
+  **Michael Torres** - CTO
+  - Ex-Google Infrastructure
+  - Built systems for 1B+ users
+  
+  ## Advisors
+  
+  **Dr. James Wilson**
+  - Former CIO, IBM
+  
+  **Lisa Park**
+  - Partner, Sequoia Capital
+}
+
+@slide {
+  title: "Financial Projections";
+  layout: TitleAndContent;
+  
+  ## 5-Year Growth Plan
+  
+  | Year | Customers | ARR | Team Size |
+  |------|-----------|-----|-----------|
+  | 2025 | 500 | $3M | 25 |
+  | 2026 | 1,500 | $12M | 50 |
+  | 2027 | 4,000 | $35M | 100 |
+  | 2028 | 9,000 | $85M | 175 |
+  | 2029 | 18,000 | $180M | 300 |
+  
+  *Assumes 20% average revenue per customer of $10K/year*
+}
+
+@slide {
+  title: "Use of Funds";
+  layout: TitleAndContent;
+  
+  ## $10M Series A Round
+  
+  - **50%** - Engineering (product development)
+  - **25%** - Sales & Marketing (customer acquisition)
+  - **15%** - Operations (infrastructure, support)
+  - **10%** - General & Administrative
+  
+  ### Key Milestones (18 months)
+  
+  ✅ Launch mobile apps (iOS, Android)  
+  ✅ Expand to APAC region  
+  ✅ 5,000 customers, $20M ARR  
+  ✅ Break even on unit economics
+}
+
+@slide {
+  title: "Why Invest in CloudSync?";
+  layout: TitleAndContent;
+  
+  ## Compelling Investment Opportunity
+  
+  ### 🎯 Huge Market
+  $85B+ and growing 18% annually
+  
+  ### 🚀 Proven Traction
+  $1.2M ARR in 8 months, 92% retention
+  
+  ### 💪 Strong Team
+  Deep experience from Dropbox, Google, IBM
+  
+  ### 🔒 Defensible Moat
+  Proprietary AI technology, enterprise relationships
+  
+  ### 💰 Clear Path to Profitability
+  Unit economics proven, scalable model
+}
+
+@slide {
+  title: "Thank You";
+  layout: TitleAndContent;
+  
+  ## Let's Transform Enterprise File Management Together
+  
+  **Contact:**
+  
+  Sarah Chen, CEO  
+  sarah@cloudsync.io  
+  +1 (415) 555-0123
+  
+  **Website:** cloudsync.io  
+  **Demo:** cloudsync.io/demo
+  
+  ---
+  
+  *Join us in revolutionizing how enterprises manage their files*
+}

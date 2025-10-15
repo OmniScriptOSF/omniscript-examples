@@ -1,0 +1,107 @@
+// =============================================================================
+// Example: Simple Presentation
+// Category: Getting Started
+// Description: Create slides with different layouts
+// Features: @slide blocks, layouts (TitleOnly, TitleAndContent, TwoColumn)
+// Estimated time: 5 minutes
+// =============================================================================
+
+@meta {
+  title: "Introduction to OmniScript";
+  author: "OmniScript Team";
+  date: "2025-10-15";
+  theme: modern;
+}
+
+// Title slide with no content
+@slide {
+  title: "Introduction to OmniScript";
+  layout: TitleOnly;
+}
+
+// Content slide with bullet points
+@slide {
+  title: "What is OmniScript?";
+  layout: TitleAndContent;
+  
+  **OmniScript Format (OSF)** is a universal document DSL that unifies:
+  
+  - Documents (like Markdown)
+  - Presentations (like PowerPoint)
+  - Spreadsheets (like Excel)
+  
+  All in a single, plain-text format!
+}
+
+// Two-column layout for comparisons
+@slide {
+  title: "Why OmniScript?";
+  layout: TwoColumn;
+  
+  ## Traditional Approach
+  
+  - Word for documents
+  - PowerPoint for slides
+  - Excel for data
+  - Binary formats
+  - Hard to version control
+  
+  ## OmniScript Approach
+  
+  - One format for everything
+  - Plain text
+  - Git-friendly
+  - LLM-friendly
+  - Multi-format export
+}
+
+// Feature highlights
+@slide {
+  title: "Key Features";
+  layout: TitleAndContent;
+  
+  ### ✨ Git-Native
+  Perfect for version control and collaboration
+  
+  ### 🤖 AI-Friendly
+  Easy for LLMs to read and generate
+  
+  ### 📦 Multi-Format Export
+  Export to PDF, DOCX, PPTX, XLSX
+  
+  ### 🎨 Professional Themes
+  Choose from 10+ built-in themes
+}
+
+// Code example slide
+@slide {
+  title: "Simple Syntax";
+  layout: TitleAndContent;
+  
+  Creating a slide is as easy as:
+  
+  ```
+  @slide {
+    title: "My Slide";
+    layout: TitleAndContent;
+    
+    - Point 1
+    - Point 2
+    - Point 3
+  }
+  ```
+}
+
+// Closing slide
+@slide {
+  title: "Get Started Today";
+  layout: TitleAndContent;
+  
+  ## Try OmniScript Now
+  
+  1. Install the CLI: `npm install -g omniscript-cli`
+  2. Create a `.osf` file
+  3. Export: `osf render myfile.osf --format pptx`
+  
+  **Visit**: omniscriptosf.github.io
+}

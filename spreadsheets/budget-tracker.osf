@@ -1,0 +1,360 @@
+// =============================================================================
+// Example: Budget Tracker
+// Category: Spreadsheets
+// Description: Personal or business budget tracking with categories
+// Features: Complex formulas, multiple sheets, financial calculations
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "2025 Budget Tracker";
+  author: "Finance Team";
+  date: "2025-10-15";
+  theme: corporate;
+}
+
+// Monthly budget sheet
+@sheet {
+  name: "Monthly Budget";
+  cols: [Category, Budgeted, Actual, Difference, Percent];
+  
+  // Headers
+  A1 = "Category";
+  B1 = "Budgeted";
+  C1 = "Actual";
+  D1 = "Difference";
+  E1 = "% of Budget";
+  
+  // Income
+  A2 = "INCOME";
+  B2 = "";
+  C2 = "";
+  D2 = "";
+  E2 = "";
+  
+  A3 = "Salary";
+  B3 = 8000;
+  C3 = 8000;
+  D3 = =C3-B3;
+  E3 = =C3/B3*100;
+  
+  A4 = "Freelance";
+  B4 = 1500;
+  C4 = 2200;
+  D4 = =C4-B4;
+  E4 = =C4/B4*100;
+  
+  A5 = "Total Income";
+  B5 = =SUM(B3:B4);
+  C5 = =SUM(C3:C4);
+  D5 = =C5-B5;
+  E5 = =C5/B5*100;
+  
+  // Expenses - Housing
+  A7 = "HOUSING";
+  B7 = "";
+  C7 = "";
+  D7 = "";
+  E7 = "";
+  
+  A8 = "Rent/Mortgage";
+  B8 = 2500;
+  C8 = 2500;
+  D8 = =C8-B8;
+  E8 = =C8/B8*100;
+  
+  A9 = "Utilities";
+  B9 = 300;
+  C9 = 285;
+  D9 = =C9-B9;
+  E9 = =C9/B9*100;
+  
+  A10 = "Internet";
+  B10 = 80;
+  C10 = 80;
+  D10 = =C10-B10;
+  E10 = =C10/B10*100;
+  
+  A11 = "Housing Total";
+  B11 = =SUM(B8:B10);
+  C11 = =SUM(C8:C10);
+  D11 = =C11-B11;
+  E11 = =C11/B11*100;
+  
+  // Transportation
+  A13 = "TRANSPORTATION";
+  B13 = "";
+  C13 = "";
+  D13 = "";
+  E13 = "";
+  
+  A14 = "Car Payment";
+  B14 = 450;
+  C14 = 450;
+  D14 = =C14-B14;
+  E14 = =C14/B14*100;
+  
+  A15 = "Gas";
+  B15 = 200;
+  C15 = 245;
+  D15 = =C15-B15;
+  E15 = =C15/B15*100;
+  
+  A16 = "Insurance";
+  B16 = 150;
+  C16 = 150;
+  D16 = =C16-B16;
+  E16 = =C16/B16*100;
+  
+  A17 = "Transportation Total";
+  B17 = =SUM(B14:B16);
+  C17 = =SUM(C14:C16);
+  D17 = =C17-B17;
+  E17 = =C17/B17*100;
+  
+  // Food
+  A19 = "FOOD";
+  B19 = "";
+  C19 = "";
+  D19 = "";
+  E19 = "";
+  
+  A20 = "Groceries";
+  B20 = 600;
+  C20 = 675;
+  D20 = =C20-B20;
+  E20 = =C20/B20*100;
+  
+  A21 = "Dining Out";
+  B21 = 300;
+  C21 = 425;
+  D21 = =C21-B21;
+  E21 = =C21/B21*100;
+  
+  A22 = "Food Total";
+  B22 = =SUM(B20:B21);
+  C22 = =SUM(C20:C21);
+  D22 = =C22-B22;
+  E22 = =C22/B22*100;
+  
+  // Personal
+  A24 = "PERSONAL";
+  B24 = "";
+  C24 = "";
+  D24 = "";
+  E24 = "";
+  
+  A25 = "Healthcare";
+  B25 = 200;
+  C25 = 180;
+  D25 = =C25-B25;
+  E25 = =C25/B25*100;
+  
+  A26 = "Entertainment";
+  B26 = 250;
+  C26 = 310;
+  D26 = =C26-B26;
+  E26 = =C26/B26*100;
+  
+  A27 = "Clothing";
+  B27 = 150;
+  C27 = 95;
+  D27 = =C27-B27;
+  E27 = =C27/B27*100;
+  
+  A28 = "Personal Total";
+  B28 = =SUM(B25:B27);
+  C28 = =SUM(C25:C27);
+  D28 = =C28-B28;
+  E28 = =C28/B28*100;
+  
+  // Savings
+  A30 = "SAVINGS";
+  B30 = "";
+  C30 = "";
+  D30 = "";
+  E30 = "";
+  
+  A31 = "Emergency Fund";
+  B31 = 500;
+  C31 = 500;
+  D31 = =C31-B31;
+  E31 = =C31/B31*100;
+  
+  A32 = "Retirement";
+  B32 = 800;
+  C32 = 800;
+  D32 = =C32-B32;
+  E32 = =C32/B32*100;
+  
+  A33 = "Investments";
+  B33 = 400;
+  C33 = 400;
+  D33 = =C33-B33;
+  E33 = =C33/B33*100;
+  
+  A34 = "Savings Total";
+  B34 = =SUM(B31:B33);
+  C34 = =SUM(C31:C33);
+  D34 = =C34-B34;
+  E34 = =C34/B34*100;
+  
+  // Grand totals
+  A36 = "TOTAL EXPENSES";
+  B36 = =B11+B17+B22+B28+B34;
+  C36 = =C11+C17+C22+C28+C34;
+  D36 = =C36-B36;
+  E36 = =C36/B36*100;
+  
+  A38 = "NET (Income - Expenses)";
+  B38 = =B5-B36;
+  C38 = =C5-C36;
+  D38 = =C38-B38;
+  E38 = "";
+}
+
+// Year-over-year comparison
+@sheet {
+  name: "Yearly Summary";
+  cols: [Month, Income, Expenses, Net, Savings Rate];
+  
+  A1 = "Month";
+  B1 = "Income";
+  C1 = "Expenses";
+  D1 = "Net";
+  E1 = "Savings Rate %";
+  
+  A2 = "January";
+  B2 = 9500;
+  C2 = 6800;
+  D2 = =B2-C2;
+  E2 = =(B2-C2)/B2*100;
+  
+  A3 = "February";
+  B3 = 9200;
+  C3 = 6950;
+  D3 = =B3-C3;
+  E3 = =(B3-C3)/B3*100;
+  
+  A4 = "March";
+  B4 = 10200;
+  C4 = 7100;
+  D4 = =B4-C4;
+  E4 = =(B4-C4)/B4*100;
+  
+  A5 = "April";
+  B5 = 9800;
+  C5 = 6900;
+  D5 = =B5-C5;
+  E5 = =(B5-C5)/B5*100;
+  
+  A6 = "May";
+  B6 = 9500;
+  C6 = 7200;
+  D6 = =B6-C6;
+  E6 = =(B6-C6)/B6*100;
+  
+  A7 = "June";
+  B7 = 10500;
+  C7 = 7500;
+  D7 = =B7-C7;
+  E7 = =(B7-C7)/B7*100;
+  
+  A8 = "July";
+  B8 = 9700;
+  C8 = 7300;
+  D8 = =B8-C8;
+  E8 = =(B8-C8)/B8*100;
+  
+  A9 = "August";
+  B9 = 9900;
+  C9 = 7100;
+  D9 = =B9-C9;
+  E9 = =(B9-C9)/B9*100;
+  
+  A10 = "September";
+  B10 = 10200;
+  C10 = 6800;
+  D10 = =B10-C10;
+  E10 = =(B10-C10)/B10*100;
+  
+  A11 = "October";
+  B11 = 10200;
+  C11 = 7365;
+  D11 = =B11-C11;
+  E11 = =(B11-C11)/B11*100;
+  
+  A12 = "November";
+  B12 = 9800;
+  C12 = 7200;
+  D12 = "";
+  E12 = "";
+  
+  A13 = "December";
+  B13 = 10000;
+  C13 = 7500;
+  D13 = "";
+  E13 = "";
+  
+  A15 = "TOTALS";
+  B15 = =SUM(B2:B13);
+  C15 = =SUM(C2:C13);
+  D15 = =B15-C15;
+  E15 = =D15/B15*100;
+  
+  A17 = "AVERAGE";
+  B17 = =AVERAGE(B2:B13);
+  C17 = =AVERAGE(C2:C13);
+  D17 = =AVERAGE(D2:D13);
+  E17 = =AVERAGE(E2:E13);
+}
+
+@doc {
+  # Budget Tracker Guide
+  
+  This budget tracker helps you monitor income, expenses, and savings goals.
+  
+  ## How to Use
+  
+  ### Monthly Budget Sheet
+  
+  1. **Update Budgeted column** with your planned amounts
+  2. **Enter Actual column** with real expenses
+  3. **Difference and Percent** calculate automatically
+  4. **Review Net** at bottom to see if you're on track
+  
+  ### Yearly Summary Sheet
+  
+  - Track month-by-month income and expenses
+  - Calculate savings rate percentage
+  - Identify spending trends
+  - Plan for seasonal variations
+  
+  ## Financial Health Indicators
+  
+  ### Good
+  - Savings rate: **20%+**
+  - Net positive every month
+  - Living below budgeted amounts
+  
+  ### Needs Improvement
+  - Savings rate: **<10%**
+  - Frequent budget overruns
+  - High variable expenses
+  
+  ## Pro Tips
+  
+  1. **Review weekly** to catch issues early
+  2. **Set up automatic savings** transfers
+  3. **Use envelope method** for variable expenses
+  4. **Build 6-month emergency fund** first
+  5. **Adjust budget quarterly** based on actual spending
+  
+  ## Customization
+  
+  Feel free to:
+  - Add your own expense categories
+  - Change budget amounts
+  - Create additional tracking sheets
+  - Export to Excel for advanced charting
+}

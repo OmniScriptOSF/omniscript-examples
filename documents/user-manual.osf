@@ -1,0 +1,584 @@
+// =============================================================================
+// Example: User Manual
+// Category: Documents
+// Description: Technical documentation and user manual
+// Features: Table of contents, installation steps, troubleshooting
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "CloudSync Desktop - User Manual";
+  author: "CloudSync Documentation Team";
+  date: "2025-10-15";
+  version: "3.2.0";
+  theme: technical;
+}
+
+@doc {
+  # CloudSync Desktop User Manual
+  ## Version 3.2.0 - Complete Guide
+  
+  **Product**: CloudSync Desktop Application  
+  **Version**: 3.2.0  
+  **Last Updated**: October 15, 2025  
+  **Support**: support@cloudsync.io
+  
+  ---
+  
+  ## Table of Contents
+  
+  1. Introduction
+  2. System Requirements
+  3. Installation
+  4. Getting Started
+  5. Core Features
+  6. Advanced Configuration
+  7. Troubleshooting
+  8. FAQ
+  9. Support & Resources
+  
+  ---
+  
+  ## 1. Introduction
+  
+  ### 1.1 What is CloudSync?
+  
+  CloudSync Desktop is a powerful file synchronization application that keeps your files in sync across all your devices. Whether you're working from home, office, or on-the-go, CloudSync ensures your files are always up-to-date and accessible.
+  
+  **Key Benefits**:
+  
+  ✅ **Real-time sync** - Changes appear instantly across devices  
+  ✅ **Selective sync** - Choose which folders to sync  
+  ✅ **Version history** - Restore previous versions up to 90 days  
+  ✅ **Offline access** - Work without internet, sync when connected  
+  ✅ **End-to-end encryption** - Your data is secure and private
+  
+  ### 1.2 What's New in Version 3.2.0
+  
+  - 🆕 Smart sync technology (reduces bandwidth by 60%)
+  - 🆕 Enhanced conflict resolution dialog
+  - 🆕 Dark mode support
+  - ⚡ 2x faster upload speeds
+  - 🐛 Fixed: Memory leak in file watcher
+  - 🐛 Fixed: Sync stuck on large files >2GB
+  
+  ---
+  
+  ## 2. System Requirements
+  
+  ### 2.1 Windows
+  
+  **Minimum Requirements**:
+  - Operating System: Windows 10 (64-bit) or later
+  - Processor: Intel Core i3 or AMD equivalent
+  - Memory: 4 GB RAM
+  - Storage: 500 MB free disk space
+  - Internet: Broadband connection (5 Mbps+)
+  
+  **Recommended**:
+  - Operating System: Windows 11 (64-bit)
+  - Processor: Intel Core i5 or AMD Ryzen 5
+  - Memory: 8 GB RAM
+  - Storage: 1 GB free disk space + space for synced files
+  - Internet: Fiber connection (50 Mbps+)
+  
+  ### 2.2 macOS
+  
+  **Minimum Requirements**:
+  - Operating System: macOS 12 Monterey or later
+  - Processor: Apple Silicon M1 or Intel Core i5
+  - Memory: 4 GB RAM
+  - Storage: 500 MB free disk space
+  - Internet: Broadband connection (5 Mbps+)
+  
+  **Recommended**:
+  - Operating System: macOS 14 Sonoma
+  - Processor: Apple Silicon M2 or later
+  - Memory: 8 GB RAM
+  - Storage: 1 GB free disk space + space for synced files
+  - Internet: Fiber connection (50 Mbps+)
+  
+  ### 2.3 Linux
+  
+  **Supported Distributions**:
+  - Ubuntu 20.04 LTS or later
+  - Fedora 36 or later
+  - Debian 11 or later
+  - Arch Linux (latest)
+  
+  **Requirements**:
+  - Processor: x86_64 architecture
+  - Memory: 4 GB RAM minimum
+  - Storage: 500 MB free disk space
+  - Desktop Environment: GNOME, KDE, or Xfce
+  
+  ---
+  
+  ## 3. Installation
+  
+  ### 3.1 Windows Installation
+  
+  **Step 1: Download the Installer**
+  
+  1. Visit https://cloudsync.io/download
+  2. Click "Download for Windows"
+  3. Save `CloudSyncSetup.exe` to your Downloads folder
+  
+  **Step 2: Run the Installer**
+  
+  1. Double-click `CloudSyncSetup.exe`
+  2. Click "Yes" if User Account Control prompts appear
+  3. Select installation language (English is default)
+  4. Click "Next" to begin
+  
+  **Step 3: Choose Installation Location**
+  
+  1. Default location: `C:\Program Files\CloudSync`
+  2. Change if needed by clicking "Browse"
+  3. Ensure you have 500 MB free space
+  4. Click "Install"
+  
+  **Step 4: Complete Installation**
+  
+  1. Wait for files to extract (1-2 minutes)
+  2. Check "Launch CloudSync" if you want to start immediately
+  3. Click "Finish"
+  
+  **Step 5: Sign In**
+  
+  1. Enter your email address
+  2. Enter your password
+  3. Click "Sign In"
+  4. Complete 2FA if enabled
+  
+  ### 3.2 macOS Installation
+  
+  **Step 1: Download the App**
+  
+  1. Visit https://cloudsync.io/download
+  2. Click "Download for Mac"
+  3. Save `CloudSync.dmg` to Downloads
+  
+  **Step 2: Install from DMG**
+  
+  1. Double-click `CloudSync.dmg`
+  2. Drag CloudSync icon to Applications folder
+  3. Eject the DMG (right-click disk image, select "Eject")
+  
+  **Step 3: First Launch**
+  
+  1. Open Applications folder
+  2. Double-click CloudSync
+  3. Click "Open" when macOS security warning appears
+  4. Sign in with your credentials
+  
+  **Step 4: Grant Permissions**
+  
+  macOS will request permissions for:
+  - **Full Disk Access**: Required for syncing protected folders
+  - **Notifications**: For sync status alerts
+  - **Accessibility**: For menu bar icon
+  
+  Grant these in System Preferences > Security & Privacy.
+  
+  ### 3.3 Linux Installation
+  
+  **Ubuntu/Debian (APT)**:
+  
+  ```bash
+  # Add CloudSync repository
+  sudo add-apt-repository ppa:cloudsync/stable
+  sudo apt update
+  
+  # Install CloudSync
+  sudo apt install cloudsync-desktop
+  
+  # Launch
+  cloudsync
+  ```
+  
+  **Fedora (DNF)**:
+  
+  ```bash
+  # Add CloudSync repository
+  sudo dnf config-manager --add-repo https://repo.cloudsync.io/fedora/cloudsync.repo
+  
+  # Install CloudSync
+  sudo dnf install cloudsync-desktop
+  
+  # Launch
+  cloudsync
+  ```
+  
+  **Arch Linux (AUR)**:
+  
+  ```bash
+  # Using yay
+  yay -S cloudsync-desktop
+  
+  # Launch
+  cloudsync
+  ```
+  
+  ---
+  
+  ## 4. Getting Started
+  
+  ### 4.1 First Sync Setup
+  
+  **Choose Your Sync Folder**:
+  
+  1. After signing in, you'll see "Choose Sync Folder" dialog
+  2. **Default**: `C:\Users\YourName\CloudSync` (Windows) or `~/CloudSync` (Mac/Linux)
+  3. **Custom**: Click "Change" to select different location
+  4. Click "Start Syncing"
+  
+  **Select What to Sync**:
+  
+  CloudSync offers two sync modes:
+  
+  - **Sync Everything** (Default): All files in your cloud storage
+  - **Selective Sync**: Choose specific folders
+  
+  For Selective Sync:
+  1. Click "Selective Sync" button in settings
+  2. Uncheck folders you don't want on this device
+  3. Click "Update"
+  
+  ### 4.2 Adding Files
+  
+  **Method 1: Drag and Drop**
+  1. Open your CloudSync folder in File Explorer/Finder
+  2. Drag files from other locations
+  3. Files auto-sync in seconds
+  
+  **Method 2: Save Directly**
+  1. In any application, choose "Save As"
+  2. Navigate to CloudSync folder
+  3. Save file - it syncs automatically
+  
+  **Method 3: Context Menu**
+  1. Right-click any file
+  2. Select "Move to CloudSync"
+  3. File moves and syncs immediately
+  
+  ### 4.3 Sharing Files
+  
+  **Create a Share Link**:
+  
+  1. Right-click file in CloudSync folder
+  2. Select "CloudSync" > "Share Link"
+  3. Choose permissions:
+     - **View Only**: Recipients can view but not edit
+     - **Can Edit**: Recipients can modify the file
+     - **Password Protected**: Requires password to access
+  4. Click "Copy Link"
+  5. Share link via email, chat, etc.
+  
+  **Share a Folder**:
+  
+  1. Right-click folder
+  2. Select "CloudSync" > "Share Folder"
+  3. Enter email addresses of collaborators
+  4. Set permission level (Viewer, Editor, Owner)
+  5. Click "Send Invites"
+  
+  ---
+  
+  ## 5. Core Features
+  
+  ### 5.1 File Sync Status
+  
+  **Icon Overlays**:
+  
+  - ✅ **Green checkmark**: Synced successfully
+  - 🔄 **Blue arrows**: Currently syncing
+  - ⚠️ **Yellow warning**: Sync issue (usually network)
+  - ❌ **Red X**: Sync error (file locked or permission issue)
+  - 📌 **Gray cloud**: Online-only (not downloaded)
+  
+  ### 5.2 Version History
+  
+  **Access Previous Versions**:
+  
+  1. Right-click file in CloudSync folder
+  2. Select "CloudSync" > "Version History"
+  3. Browse versions by date/time
+  4. Click version to preview
+  5. Click "Restore" to revert
+  
+  **Retention**:
+  - Free accounts: 30 days
+  - Pro accounts: 90 days
+  - Business accounts: 1 year
+  
+  ### 5.3 Offline Access
+  
+  **Make Files Available Offline**:
+  
+  1. Right-click file or folder
+  2. Select "CloudSync" > "Make Available Offline"
+  3. Files download to device
+  4. Access without internet connection
+  5. Changes sync when online
+  
+  **Smart Sync** (Premium feature):
+  - Files appear in folder but don't take space
+  - Download on-demand when you open them
+  - Automatic cleanup of old files
+  
+  ### 5.4 Conflict Resolution
+  
+  When two devices edit the same file simultaneously:
+  
+  1. CloudSync detects conflict
+  2. Shows "Resolve Conflict" dialog
+  3. Options:
+     - **Keep Your Version**: Discard remote changes
+     - **Keep Other Version**: Discard your changes
+     - **Keep Both**: Save both as separate files
+  4. Click choice to resolve
+  
+  ---
+  
+  ## 6. Advanced Configuration
+  
+  ### 6.1 Bandwidth Settings
+  
+  **Limit Upload/Download Speed**:
+  
+  1. Click CloudSync icon in system tray
+  2. Select "Preferences" > "Network"
+  3. Enable "Limit download rate"
+  4. Set max speed (e.g., 1000 KB/s)
+  5. Enable "Limit upload rate"
+  6. Set max speed
+  7. Click "Save"
+  
+  **Smart Bandwidth**:
+  - Auto-adjusts based on network activity
+  - Pauses during video calls
+  - Maximum speed during idle times
+  
+  ### 6.2 Excluded Files
+  
+  **Ignore Certain File Types**:
+  
+  1. Preferences > "Advanced"
+  2. Click "Excluded Files"
+  3. Add patterns:
+     - `*.tmp` (temporary files)
+     - `.DS_Store` (Mac system files)
+     - `Thumbs.db` (Windows thumbnails)
+     - `~$*` (Office temp files)
+  4. Click "Save"
+  
+  ### 6.3 Proxy Configuration
+  
+  **Configure Proxy Server**:
+  
+  1. Preferences > "Network"
+  2. Select "Use proxy server"
+  3. Enter proxy address (e.g., `proxy.company.com`)
+  4. Enter port (e.g., `8080`)
+  5. If authentication required:
+     - Enter username
+     - Enter password
+  6. Click "Test Connection"
+  7. If successful, click "Save"
+  
+  ---
+  
+  ## 7. Troubleshooting
+  
+  ### 7.1 Sync Issues
+  
+  **Problem**: Files not syncing
+  
+  **Solutions**:
+  
+  1. **Check internet connection**
+     - Open web browser, verify connectivity
+     - Try accessing cloudsync.io
+  
+  2. **Restart CloudSync**
+     - Right-click tray icon
+     - Select "Quit CloudSync"
+     - Relaunch application
+  
+  3. **Check file permissions**
+     - Right-click file > Properties
+     - Ensure you have read/write access
+  
+  4. **Verify disk space**
+     - Check available space on drive
+     - Need at least 500 MB free
+  
+  5. **Pause and resume sync**
+     - Click tray icon
+     - Select "Pause Syncing"
+     - Wait 10 seconds
+     - Select "Resume Syncing"
+  
+  ### 7.2 High CPU Usage
+  
+  **Problem**: CloudSync using excessive CPU
+  
+  **Solutions**:
+  
+  1. **Large file sync in progress**
+     - Wait for sync to complete
+     - Check status in tray menu
+  
+  2. **Too many files**
+     - Use Selective Sync to reduce file count
+     - Exclude unnecessary folders
+  
+  3. **Antivirus interference**
+     - Add CloudSync to antivirus exclusions
+     - Specifically exclude sync folder
+  
+  4. **Outdated version**
+     - Check for updates
+     - Install latest version
+  
+  ### 7.3 Login Problems
+  
+  **Problem**: Can't sign in
+  
+  **Solutions**:
+  
+  1. **Verify credentials**
+     - Double-check email and password
+     - Try password reset if needed
+  
+  2. **2FA issues**
+     - Ensure device time is correct
+     - Check 2FA app for current code
+  
+  3. **Firewall blocking**
+     - Add CloudSync to firewall exceptions
+     - Allow TCP ports 443 and 80
+  
+  4. **Clear cache**
+     - Preferences > "Advanced"
+     - Click "Clear Cache"
+     - Restart application
+  
+  ### 7.4 Conflict Notifications
+  
+  **Problem**: Frequent conflict warnings
+  
+  **Solutions**:
+  
+  1. **Coordinate with team**
+     - Avoid simultaneous editing
+     - Use file locking features
+  
+  2. **Enable auto-resolution**
+     - Preferences > "Sync"
+     - Select "Auto-resolve conflicts"
+     - Choose default behavior
+  
+  3. **Check file format**
+     - Some formats sync better (txt, md)
+     - Binary files (docx, xlsx) prone to conflicts
+  
+  ---
+  
+  ## 8. FAQ
+  
+  **Q: How much does CloudSync cost?**  
+  A: Free plan includes 5 GB storage. Pro plan ($9.99/month) offers 2 TB. Business plans start at $15/user/month.
+  
+  **Q: Is my data encrypted?**  
+  A: Yes. Files are encrypted in transit (TLS 1.3) and at rest (AES-256). Zero-knowledge encryption available on Pro plans.
+  
+  **Q: How many devices can I sync?**  
+  A: Unlimited devices on all plans.
+  
+  **Q: What happens if I delete a file?**  
+  A: Deleted files go to trash for 30 days before permanent deletion. Restore anytime from web dashboard.
+  
+  **Q: Can I sync external drives?**  
+  A: Yes, but drive must always be connected. We recommend syncing to internal drive instead.
+  
+  **Q: Does CloudSync work offline?**  
+  A: Yes. Changes made offline sync automatically when reconnected.
+  
+  **Q: How fast is the sync?**  
+  A: Depends on internet speed and file size. Typical uploads: 1-10 MB/s. We use delta sync for faster updates.
+  
+  **Q: Can I collaborate in real-time?**  
+  A: CloudSync syncs files, not real-time collaboration. For live editing, use CloudSync Docs (separate product).
+  
+  ---
+  
+  ## 9. Support & Resources
+  
+  ### 9.1 Getting Help
+  
+  **In-App Support**:
+  - Click "?" icon in CloudSync
+  - Access knowledge base articles
+  - Submit support ticket
+  
+  **Online Resources**:
+  - Help Center: https://help.cloudsync.io
+  - Community Forum: https://community.cloudsync.io
+  - Video Tutorials: https://youtube.com/cloudsync
+  
+  **Contact Support**:
+  - Email: support@cloudsync.io
+  - Live Chat: Available 24/7 for Pro/Business users
+  - Phone: 1-800-CLOUD-99 (Business users only)
+  
+  ### 9.2 Additional Documentation
+  
+  - **Admin Guide**: For IT administrators managing deployments
+  - **API Reference**: For developers integrating CloudSync
+  - **Security Whitepaper**: Detailed security and compliance info
+  - **Release Notes**: Latest features and bug fixes
+  
+  All available at: https://docs.cloudsync.io
+  
+  ---
+  
+  ## Appendix A: Keyboard Shortcuts
+  
+  **Windows/Linux**:
+  - Open CloudSync folder: `Ctrl + Shift + C`
+  - Open preferences: `Ctrl + ,`
+  - Pause/resume sync: `Ctrl + Shift + P`
+  
+  **macOS**:
+  - Open CloudSync folder: `Cmd + Shift + C`
+  - Open preferences: `Cmd + ,`
+  - Pause/resume sync: `Cmd + Shift + P`
+  
+  ## Appendix B: Command Line Tools
+  
+  CloudSync includes CLI for automation:
+  
+  ```bash
+  # Upload file
+  cloudsync upload /path/to/file.txt
+  
+  # Download file
+  cloudsync download remote-file.txt /local/path/
+  
+  # List remote files
+  cloudsync ls
+  
+  # Sync status
+  cloudsync status
+  ```
+  
+  Full CLI documentation: https://docs.cloudsync.io/cli
+  
+  ---
+  
+  **End of User Manual**
+  
+  *CloudSync Desktop v3.2.0 - © 2025 CloudSync Inc. All rights reserved.*
+}

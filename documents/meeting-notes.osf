@@ -1,0 +1,281 @@
+// =============================================================================
+// Example: Meeting Notes
+// Category: Documents
+// Description: Structured meeting notes template with action items
+// Features: Date formatting, attendees list, agenda, decisions, action tracking
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "Product Planning Meeting Notes";
+  author: "Sarah Johnson";
+  date: "2025-10-15";
+  version: "1.0";
+  theme: corporate;
+}
+
+@doc {
+  # Product Planning Meeting Notes
+  ## Q4 2025 Roadmap Discussion
+  
+  **Date**: October 15, 2025, 2:00 PM - 3:30 PM  
+  **Location**: Conference Room B / Zoom  
+  **Meeting ID**: PROD-2025-42
+  
+  ---
+  
+  ## 📋 Attendees
+  
+  **Present**:
+  - Sarah Johnson (Product Manager) - *Facilitator*
+  - Michael Chen (Engineering Lead)
+  - Lisa Rodriguez (UX Designer)
+  - David Kim (Marketing Manager)
+  - Emma Williams (Customer Success)
+  
+  **Absent**:
+  - John Smith (CTO) - *On leave*
+  
+  ---
+  
+  ## 🎯 Meeting Objectives
+  
+  1. Review Q3 product performance
+  2. Prioritize Q4 feature requests
+  3. Align on roadmap timeline
+  4. Identify resource needs
+  5. Define success metrics
+  
+  ---
+  
+  ## 📊 Q3 Performance Review
+  
+  ### Key Metrics (Presented by Sarah)
+  
+  - **Active Users**: 12,458 (+18% from Q2)
+  - **Feature Adoption**: Dashboard v2.0 at 67%
+  - **Customer Satisfaction**: 4.6/5 stars
+  - **Support Tickets**: Down 22% from Q2
+  
+  ### Highlights
+  
+  ✅ Successfully launched mobile app beta  
+  ✅ Reduced onboarding time by 40%  
+  ✅ Improved API response time to <50ms  
+  
+  ### Challenges
+  
+  ⚠️ Search feature still underperforming  
+  ⚠️ Enterprise customers requesting SSO  
+  ⚠️ Mobile app stability needs improvement  
+  
+  ---
+  
+  ## 💬 Discussion Points
+  
+  ### 1. Feature Prioritization (45 minutes)
+  
+  **Proposed Features for Q4**:
+  
+  1. **Advanced Search with Filters** (High Priority)
+     - **Champion**: Lisa
+     - **Rationale**: #1 user request, impacts retention
+     - **Engineering Estimate**: 3 weeks
+     - **Decision**: ✅ **APPROVED** - Start Week 1
+  
+  2. **Enterprise SSO Integration** (High Priority)
+     - **Champion**: David
+     - **Rationale**: Blocking 5 enterprise deals
+     - **Engineering Estimate**: 4 weeks
+     - **Decision**: ✅ **APPROVED** - Start Week 2
+  
+  3. **Mobile App Offline Mode** (Medium Priority)
+     - **Champion**: Michael
+     - **Rationale**: Requested by 30% of mobile users
+     - **Engineering Estimate**: 5 weeks
+     - **Decision**: 🔄 **DEFERRED** to Q1 2026 (resource constraints)
+  
+  4. **API Rate Limiting Dashboard** (Low Priority)
+     - **Champion**: Emma
+     - **Rationale**: Helps developers debug issues
+     - **Engineering Estimate**: 2 weeks
+     - **Decision**: ✅ **APPROVED** - Start Week 6
+  
+  5. **Bulk Import Tool** (Low Priority)
+     - **Champion**: Emma
+     - **Rationale**: Onboarding efficiency
+     - **Engineering Estimate**: 3 weeks
+     - **Decision**: ❌ **REJECTED** - Low ROI
+  
+  ### 2. Resource Allocation (20 minutes)
+  
+  **Michael's Update**:
+  - Currently 6 engineers on product team
+  - 2 engineers rolling off Infrastructure project Week 3
+  - Propose: Dedicate 1 engineer full-time to mobile stability
+  
+  **Decision**: Approved. John Martinez assigned to mobile.
+  
+  **Lisa's Request**:
+  - Need 1 additional designer for Q4
+  - Current workload at 120% capacity
+  
+  **Decision**: Approved. Budget allocated for contract designer.
+  
+  ### 3. Timeline Discussion (15 minutes)
+  
+  **Proposed Q4 Schedule**:
+  
+  - **Week 1-3**: Advanced Search development
+  - **Week 2-5**: SSO Integration development
+  - **Week 4-6**: Mobile stability improvements
+  - **Week 6-8**: API Dashboard development
+  - **Week 9-12**: Testing, polish, documentation
+  - **Week 13**: Q4 Release (December 15, 2025)
+  
+  **Concerns Raised**:
+  - Lisa: Tight timeline, need buffer for design iterations
+  - Michael: Holiday season may impact productivity
+  
+  **Resolution**: Add 1-week buffer. New target: December 22, 2025
+  
+  ---
+  
+  ## ✅ Decisions Made
+  
+  1. **Q4 Features Approved**:
+     - Advanced Search with Filters
+     - Enterprise SSO Integration
+     - API Rate Limiting Dashboard
+  
+  2. **Deferred to Q1 2026**:
+     - Mobile App Offline Mode
+  
+  3. **Resource Approvals**:
+     - John Martinez → Mobile stability (full-time)
+     - Contract UX Designer (to be hired)
+  
+  4. **Timeline**:
+     - Q4 Release Target: December 22, 2025
+     - Include 1-week buffer for holidays
+  
+  5. **Success Metrics**:
+     - Search feature: >80% user adoption by end of Q1 2026
+     - SSO: Enable at least 3 enterprise deals to close
+     - Mobile stability: <1% crash rate
+  
+  ---
+  
+  ## 📝 Action Items
+  
+  ### High Priority (Due This Week)
+  
+  | Action | Owner | Due Date | Status |
+  |--------|-------|----------|--------|
+  | Create detailed spec for Advanced Search | Lisa | Oct 18 | 🔴 Not Started |
+  | Research SSO providers (Okta, Auth0) | Michael | Oct 18 | 🔴 Not Started |
+  | Post job listing for contract designer | Sarah | Oct 17 | 🔴 Not Started |
+  | Update product roadmap slides | Sarah | Oct 19 | 🔴 Not Started |
+  
+  ### Medium Priority (Due Next Week)
+  
+  | Action | Owner | Due Date | Status |
+  |--------|-------|----------|--------|
+  | Schedule SSO vendor demos | David | Oct 22 | 🔴 Not Started |
+  | Create API dashboard wireframes | Lisa | Oct 23 | 🔴 Not Started |
+  | Analyze mobile crash reports | John M. | Oct 24 | 🔴 Not Started |
+  | Draft customer communication about SSO | David | Oct 25 | 🔴 Not Started |
+  
+  ### Low Priority (Due End of Month)
+  
+  | Action | Owner | Due Date | Status |
+  |--------|-------|----------|--------|
+  | Conduct user interviews on search | Emma | Oct 31 | 🔴 Not Started |
+  | Prepare Q3 retrospective doc | Sarah | Oct 31 | 🔴 Not Started |
+  | Update engineering capacity planning | Michael | Oct 31 | 🔴 Not Started |
+  
+  ---
+  
+  ## 🔄 Follow-Up Items
+  
+  ### Questions to Resolve
+  
+  1. **Budget**: Confirm budget for SSO vendor (Michael to check with Finance)
+  2. **Legal**: Review SSO vendor contracts (David to loop in Legal)
+  3. **Security**: Assess security requirements for SSO (Michael to consult Security team)
+  
+  ### Future Discussion Topics
+  
+  - Q1 2026 planning kickoff (schedule for November)
+  - Mobile app feature roadmap (separate meeting needed)
+  - API v2.0 considerations (defer to Q1)
+  
+  ---
+  
+  ## 📎 Attachments & Resources
+  
+  - Q3 Performance Dashboard: [link]
+  - Feature Request Backlog: [link]
+  - Engineering Capacity Sheet: [link]
+  - Customer Feedback Summary: [link]
+  
+  ---
+  
+  ## 📅 Next Meeting
+  
+  **Date**: October 29, 2025, 2:00 PM  
+  **Agenda**: 
+  - Review Advanced Search spec
+  - SSO vendor selection
+  - Designer candidate interviews update
+  
+  **Prep Required**:
+  - Michael: SSO vendor comparison matrix
+  - Lisa: Completed search spec
+  - Sarah: Shortlist of designer candidates
+  
+  ---
+  
+  ## 📝 Notes & Parking Lot
+  
+  **Michael's Note**: Consider using feature flags for Q4 releases to enable gradual rollout.
+  
+  **Lisa's Observation**: Users confused by current navigation. May need UX audit in Q1.
+  
+  **David's Reminder**: Marketing needs 2 weeks lead time before any release announcements.
+  
+  **Parking Lot** (topics deferred):
+  - Internationalization strategy
+  - Dark mode for mobile app
+  - Advanced analytics dashboard
+  
+  ---
+  
+  ## ✍️ Meeting Notes Best Practices
+  
+  This template demonstrates:
+  
+  1. **Clear Structure**: Sections for attendees, objectives, discussion, decisions, actions
+  2. **Visual Indicators**: Emojis for quick scanning (✅ ❌ 🔄 🔴)
+  3. **Accountability**: Every action item has owner and due date
+  4. **Context**: Background information for future reference
+  5. **Follow-Up**: Clear next steps and future meeting agenda
+  
+  **Tips for Effective Meeting Notes**:
+  
+  - Take notes in real-time during the meeting
+  - Use consistent formatting and structure
+  - Capture decisions with clear approve/reject/defer status
+  - Assign every action item to a specific person
+  - Include relevant links and attachments
+  - Distribute notes within 24 hours of meeting
+  - Archive in shared location for easy reference
+  
+  **Action Item Tracking**:
+  
+  - 🔴 Not Started
+  - 🟡 In Progress
+  - 🟢 Complete
+  - ⏸️ Blocked
+  - ❌ Cancelled
+}

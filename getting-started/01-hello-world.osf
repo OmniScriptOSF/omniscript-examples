@@ -1,0 +1,35 @@
+// =============================================================================
+// Example: Hello World
+// Category: Getting Started
+// Description: The simplest possible OSF document - your first step
+// Features: @meta block, @doc block, basic text
+// Estimated time: 2 minutes
+// =============================================================================
+
+@meta {
+  title: "Hello World";
+  author: "OmniScript Team";
+  date: "2025-10-15";
+  version: "1.0";
+  theme: default;
+}
+
+@doc {
+  # Hello, World!
+  
+  Welcome to **OmniScript Format** (OSF)!
+  
+  This is the simplest possible OSF document. It contains:
+  
+  - A `@meta` block with document information
+  - A `@doc` block with markdown-formatted content
+  
+  ## What You Can Do Next
+  
+  1. Modify this text
+  2. Add more sections
+  3. Try different themes
+  4. Export to PDF, DOCX, PPTX, or XLSX
+  
+  **That's it!** You've created your first OSF document.
+}

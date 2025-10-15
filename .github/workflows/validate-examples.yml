@@ -1,0 +1,39 @@
+# File: .github/workflows/validate-examples.yml
+name: Validate Examples
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      
+      - name: Install omniscript-cli
+        run: npm install -g omniscript-cli@latest
+      
+      - name: Validate all examples
+        run: |
+          echo "Validating all OSF examples..."
+          find . -name "*.osf" -type f | while read file; do
+            echo "Validating: $file"
+            osf parse "$file" || exit 1
+          done
+          echo "✓ All examples validated successfully!"
+      
+      - name: Count examples
+        run: |
+          total=$(find . -name "*.osf" -type f | wc -l)
+          echo "Total examples: $total"

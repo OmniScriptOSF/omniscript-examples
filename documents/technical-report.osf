@@ -1,0 +1,276 @@
+// =============================================================================
+// Example: Technical Report
+// Category: Documents
+// Description: Multi-section technical document with structured content
+// Features: Complex document structure, multiple sections, technical content
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "System Architecture Report";
+  author: "Engineering Team";
+  date: "2025-10-15";
+  version: "2.1";
+  theme: technical;
+}
+
+@doc {
+  # System Architecture Report
+  ## Microservices Platform v2.0
+  
+  **Document Version**: 2.1  
+  **Last Updated**: October 15, 2025  
+  **Status**: Final
+  
+  ---
+  
+  # Executive Summary
+  
+  This document describes the architecture of our new microservices platform, which provides a scalable, resilient foundation for all product services. The platform handles **10M+ requests per day** with **99.99% uptime**.
+  
+  **Key Achievements:**
+  
+  - 50% reduction in deployment time
+  - 75% improvement in system resilience
+  - 3x increase in development velocity
+  - Zero-downtime deployments
+  
+  ---
+  
+  # 1. Introduction
+  
+  ## 1.1 Purpose
+  
+  This report provides a comprehensive overview of the microservices platform architecture, including design decisions, technology choices, and operational considerations.
+  
+  ## 1.2 Scope
+  
+  The platform encompasses:
+  
+  - API Gateway and routing layer
+  - Service mesh infrastructure
+  - Database abstraction layer
+  - Message queue system
+  - Monitoring and observability stack
+  
+  ## 1.3 Audience
+  
+  This document is intended for:
+  
+  - Engineering teams
+  - System architects
+  - DevOps engineers
+  - Technical leadership
+  
+  ---
+  
+  # 2. System Overview
+  
+  ## 2.1 High-Level Architecture
+  
+  The platform follows a **distributed microservices** architecture with the following layers:
+  
+  1. **Edge Layer**: API Gateway, CDN, Load Balancers
+  2. **Service Layer**: Business logic microservices
+  3. **Data Layer**: Databases, caching, message queues
+  4. **Platform Layer**: Monitoring, logging, CI/CD
+  
+  ## 2.2 Core Components
+  
+  ### API Gateway
+  
+  - Technology: **Kong**
+  - Responsibilities: Routing, authentication, rate limiting
+  - Throughput: 50,000 req/sec
+  - Latency: p99 < 50ms
+  
+  ### Service Mesh
+  
+  - Technology: **Istio**
+  - Features: Service discovery, load balancing, circuit breaking
+  - mTLS encryption between all services
+  
+  ### Database Layer
+  
+  - **PostgreSQL 17** for transactional data
+  - **MongoDB 8** for document storage
+  - **Redis 8** for caching and session management
+  
+  ---
+  
+  # 3. Technology Stack
+  
+  ## 3.1 Backend Services
+  
+  - **Language**: Node.js 22 (TypeScript), Python 3.12
+  - **Frameworks**: Express, FastAPI
+  - **API Style**: REST, GraphQL, gRPC
+  
+  ## 3.2 Data Storage
+  
+  - **Relational**: PostgreSQL 17.5
+  - **Document**: MongoDB 8.0
+  - **Cache**: Redis 8.02
+  - **Object Storage**: MinIO (S3-compatible)
+  
+  ## 3.3 Message Queue
+  
+  - **Technology**: RabbitMQ 4.0
+  - **Patterns**: Pub/sub, work queues, RPC
+  - **Throughput**: 100,000 msg/sec
+  
+  ## 3.4 Observability
+  
+  - **Metrics**: Prometheus + Grafana
+  - **Logs**: ELK Stack (Elasticsearch, Logstash, Kibana)
+  - **Tracing**: Jaeger
+  - **Alerting**: PagerDuty integration
+  
+  ---
+  
+  # 4. Design Patterns
+  
+  ## 4.1 Service Communication
+  
+  Services communicate using:
+  
+  - **Synchronous**: REST/GraphQL for user-facing APIs
+  - **Asynchronous**: Message queues for background tasks
+  - **Real-time**: WebSockets for live updates
+  
+  ## 4.2 Data Consistency
+  
+  We employ **eventual consistency** with:
+  
+  - Event sourcing for critical workflows
+  - SAGA pattern for distributed transactions
+  - CQRS (Command Query Responsibility Segregation)
+  
+  ## 4.3 Resilience Patterns
+  
+  - Circuit breakers (via Istio)
+  - Retry with exponential backoff
+  - Bulkheads and timeouts
+  - Graceful degradation
+  
+  ---
+  
+  # 5. Security Architecture
+  
+  ## 5.1 Authentication & Authorization
+  
+  - **Protocol**: OAuth 2.0 + OpenID Connect
+  - **Token Type**: JWT (JSON Web Tokens)
+  - **MFA**: Required for production access
+  
+  ## 5.2 Network Security
+  
+  - **Zero Trust** architecture
+  - mTLS between all services
+  - Network segmentation via Kubernetes NetworkPolicies
+  - Web Application Firewall (WAF)
+  
+  ## 5.3 Data Security
+  
+  - Encryption at rest (AES-256)
+  - Encryption in transit (TLS 1.3)
+  - Key management via HashiCorp Vault
+  - Regular security audits
+  
+  ---
+  
+  # 6. Performance Metrics
+  
+  ## 6.1 Current Performance
+  
+  - **Throughput**: 10M requests/day
+  - **Latency**: p50 < 20ms, p99 < 100ms
+  - **Uptime**: 99.99% (4 nines)
+  - **Error Rate**: < 0.01%
+  
+  ## 6.2 Scalability
+  
+  The platform automatically scales based on:
+  
+  - CPU utilization (target: 70%)
+  - Memory usage (target: 80%)
+  - Request queue depth
+  - Custom metrics (e.g., message queue length)
+  
+  ---
+  
+  # 7. Deployment Strategy
+  
+  ## 7.1 CI/CD Pipeline
+  
+  1. **Build**: Automated on every commit
+  2. **Test**: Unit, integration, E2E tests
+  3. **Security Scan**: Dependency and container scanning
+  4. **Deploy**: Blue-green deployment to production
+  
+  ## 7.2 Rollout Process
+  
+  - **Canary deployment**: 5% → 25% → 50% → 100%
+  - **Automated rollback** on error rate spike
+  - **Feature flags** for gradual feature rollout
+  
+  ---
+  
+  # 8. Monitoring & Alerting
+  
+  ## 8.1 Key Metrics
+  
+  - Request rate, latency, error rate (RED method)
+  - CPU, memory, disk, network (USE method)
+  - Business metrics (signups, orders, revenue)
+  
+  ## 8.2 Alert Levels
+  
+  - **P1 (Critical)**: Production down, immediate response
+  - **P2 (High)**: Performance degradation, respond within 1 hour
+  - **P3 (Medium)**: Non-critical issues, respond next business day
+  
+  ---
+  
+  # 9. Future Roadmap
+  
+  ## Q4 2025
+  
+  - Migrate remaining monolith components
+  - Implement service-to-service authentication
+  - Add GraphQL federation
+  
+  ## 2026
+  
+  - Multi-region deployment
+  - Edge computing capabilities
+  - AI-powered auto-scaling
+  
+  ---
+  
+  # 10. Conclusion
+  
+  The microservices platform provides a solid foundation for rapid development and reliable operation. With **99.99% uptime** and **3x development velocity improvement**, the platform has exceeded initial goals.
+  
+  ## Next Steps
+  
+  1. Complete migration of remaining services
+  2. Expand monitoring capabilities
+  3. Conduct quarterly architecture reviews
+  
+  ---
+  
+  # Appendix A: Glossary
+  
+  - **API**: Application Programming Interface
+  - **CDN**: Content Delivery Network
+  - **CQRS**: Command Query Responsibility Segregation
+  - **mTLS**: Mutual Transport Layer Security
+  - **SAGA**: A pattern for managing distributed transactions
+  
+  # Appendix B: References
+  
+  1. Martin Fowler - "Microservices Architecture"
+  2. "Building Microservices" by Sam Newman
+  3. "Designing Data-Intensive Applications" by Martin Kleppmann
+}

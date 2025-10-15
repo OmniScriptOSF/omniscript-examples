@@ -1,0 +1,81 @@
+// =============================================================================
+// Example: Basic Document
+// Category: Getting Started
+// Description: Learn document formatting with headings, lists, and styles
+// Features: Markdown syntax, headings, bold, italic, code, lists
+// Estimated time: 5 minutes
+// =============================================================================
+
+@meta {
+  title: "Basic Document Formatting";
+  author: "OmniScript Team";
+  date: "2025-10-15";
+  theme: minimal;
+}
+
+@doc {
+  # Document Formatting Guide
+  
+  This document demonstrates all the basic formatting options available in OSF.
+  
+  ## Text Formatting
+  
+  You can make text **bold** using double asterisks.
+  
+  You can make text *italic* using single asterisks.
+  
+  You can display `inline code` using backticks.
+  
+  ## Headings
+  
+  Use `#` symbols to create headings of different levels:
+  
+  # Heading 1 (Main Title)
+  ## Heading 2 (Section)
+  ### Heading 3 (Subsection)
+  #### Heading 4 (Sub-subsection)
+  
+  ## Lists
+  
+  ### Unordered Lists
+  
+  Create bullet points with hyphens:
+  
+  - First item
+  - Second item
+  - Third item
+    - Nested item
+    - Another nested item
+  
+  ### Ordered Lists
+  
+  Create numbered lists:
+  
+  1. First step
+  2. Second step
+  3. Third step
+  4. Fourth step
+  
+  ## Paragraphs
+  
+  Paragraphs are separated by blank lines. This makes your documents easy to read and maintain.
+  
+  You can write multiple paragraphs in a single doc block, and they will be formatted appropriately in the output.
+  
+  ## Combining Formatting
+  
+  You can **combine *different* formatting** options like this:
+  
+  - **Bold list item**
+  - *Italic list item*
+  - Item with `code snippet`
+  
+  ## Pro Tip
+  
+  OSF documents are just plain text files, which means they work great with:
+  
+  - Git version control
+  - Text editors and IDEs
+  - Command-line tools
+  - AI assistants and LLMs
+}

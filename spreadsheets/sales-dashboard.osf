@@ -1,0 +1,428 @@
+// =============================================================================
+// Example: Sales Dashboard
+// Category: Spreadsheets
+// Description: Sales metrics and KPI tracking dashboard
+// Features: Multiple sheets, complex formulas, data aggregation
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "Q3 2025 Sales Dashboard";
+  author: "Sales Operations";
+  date: "2025-10-15";
+  theme: corporate;
+}
+
+@sheet {
+  name: "Summary Dashboard";
+  cols: [Metric, Target, Actual, Variance, Percent];
+  
+  // Headers
+  A1 = "Key Metrics";
+  B1 = "Q3 Target";
+  C1 = "Q3 Actual";
+  D1 = "Variance";
+  E1 = "% of Target";
+  
+  // Revenue metrics
+  A3 = "Total Revenue";
+  B3 = 15000000;
+  C3 = 16250000;
+  D3 = =C3-B3;
+  E3 = =C3/B3*100;
+  
+  A4 = "New Business";
+  B4 = 10000000;
+  C4 = 11200000;
+  D4 = =C4-B4;
+  E4 = =C4/B4*100;
+  
+  A5 = "Expansion";
+  B5 = 5000000;
+  C5 = 5050000;
+  D5 = =C5-B5;
+  E5 = =C5/B5*100;
+  
+  // Customer metrics
+  A7 = "New Customers";
+  B7 = 150;
+  C7 = 167;
+  D7 = =C7-B7;
+  E7 = =C7/B7*100;
+  
+  A8 = "Total Customers";
+  B8 = 1200;
+  C8 = 1247;
+  D8 = =C8-B8;
+  E8 = =C8/B8*100;
+  
+  A9 = "Churn Rate %";
+  B9 = 5;
+  C9 = 3.2;
+  D9 = =C9-B9;
+  E9 = =C9/B9*100;
+  
+  // Activity metrics
+  A11 = "Deals Closed";
+  B11 = 200;
+  C11 = 234;
+  D11 = =C11-B11;
+  E11 = =C11/B11*100;
+  
+  A12 = "Win Rate %";
+  B12 = 25;
+  C12 = 28;
+  D12 = =C12-B12;
+  E12 = =C12/B12*100;
+  
+  A13 = "Avg Deal Size";
+  B13 = 75000;
+  C13 = 82500;
+  D13 = =C13-B13;
+  E13 = =C13/B13*100;
+  
+  A14 = "Sales Cycle (days)";
+  B14 = 60;
+  C14 = 52;
+  D14 = =C14-B14;
+  E14 = =C14/B14*100;
+}
+
+@sheet {
+  name: "Monthly Performance";
+  cols: [Month, Revenue, Target, Variance, New_Customers, Churn];
+  
+  A1 = "Month";
+  B1 = "Revenue";
+  C1 = "Target";
+  D1 = "Variance";
+  E1 = "New Customers";
+  F1 = "Churn %";
+  
+  A2 = "July";
+  B2 = 5100000;
+  C2 = 5000000;
+  D2 = =B2-C2;
+  E2 = 52;
+  F2 = 3.5;
+  
+  A3 = "August";
+  B3 = 5400000;
+  C3 = 5000000;
+  D3 = =B3-C3;
+  E3 = 58;
+  F3 = 3.2;
+  
+  A4 = "September";
+  B4 = 5750000;
+  C4 = 5000000;
+  D4 = =B4-C4;
+  E4 = 57;
+  F4 = 2.9;
+  
+  A6 = "Q3 Total";
+  B6 = =SUM(B2:B4);
+  C6 = =SUM(C2:C4);
+  D6 = =B6-C6;
+  E6 = =SUM(E2:E4);
+  F6 = =AVERAGE(F2:F4);
+}
+
+@sheet {
+  name: "Sales by Region";
+  cols: [Region, Q1, Q2, Q3, Total, Growth];
+  
+  A1 = "Region";
+  B1 = "Q1 Revenue";
+  C1 = "Q2 Revenue";
+  D1 = "Q3 Revenue";
+  E1 = "YTD Total";
+  F1 = "Q3 Growth %";
+  
+  A2 = "North America";
+  B2 = 4200000;
+  C2 = 4650000;
+  D2 = 5100000;
+  E2 = =B2+C2+D2;
+  F2 = =(D2-C2)/C2*100;
+  
+  A3 = "EMEA";
+  B3 = 3100000;
+  C3 = 3450000;
+  D3 = 3850000;
+  E3 = =B3+C3+D3;
+  F3 = =(D3-C3)/C3*100;
+  
+  A4 = "APAC";
+  B4 = 2400000;
+  C4 = 2700000;
+  D4 = 3100000;
+  E4 = =B4+C4+D4;
+  F4 = =(D4-C4)/C4*100;
+  
+  A5 = "LATAM";
+  B5 = 1800000;
+  C5 = 2050000;
+  D5 = 2300000;
+  E5 = =B5+C5+D5;
+  F5 = =(D5-C5)/C5*100;
+  
+  A7 = "Total";
+  B7 = =SUM(B2:B5);
+  C7 = =SUM(C2:C5);
+  D7 = =SUM(D2:D5);
+  E7 = =SUM(E2:E5);
+  F7 = =AVERAGE(F2:F5);
+}
+
+@sheet {
+  name: "Top Deals";
+  cols: [Company, Amount, Stage, Close_Date, Owner, Probability];
+  
+  A1 = "Company Name";
+  B1 = "Deal Amount";
+  C1 = "Stage";
+  D1 = "Expected Close";
+  E1 = "Sales Rep";
+  F1 = "Win Probability";
+  
+  A2 = "GlobalTech Inc";
+  B2 = 2100000;
+  C2 = "Negotiation";
+  D2 = "2025-10-30";
+  E2 = "Sarah Chen";
+  F2 = 80;
+  
+  A3 = "MegaCorp Ltd";
+  B3 = 1850000;
+  C3 = "Proposal";
+  D3 = "2025-11-15";
+  E3 = "Michael Torres";
+  F3 = 65;
+  
+  A4 = "TechStart Co";
+  B4 = 950000;
+  C4 = "Negotiation";
+  D4 = "2025-10-25";
+  E4 = "Sarah Chen";
+  F4 = 85;
+  
+  A5 = "Enterprise Systems";
+  B5 = 750000;
+  C5 = "Closed Won";
+  D5 = "2025-09-28";
+  E5 = "David Kim";
+  F5 = 100;
+  
+  A6 = "CloudFirst";
+  B6 = 680000;
+  C6 = "Discovery";
+  D6 = "2025-11-30";
+  E6 = "Lisa Rodriguez";
+  F6 = 40;
+  
+  A7 = "DataCorp";
+  B7 = 625000;
+  C7 = "Proposal";
+  D7 = "2025-11-10";
+  E7 = "Michael Torres";
+  F7 = 60;
+  
+  A8 = "Innovation Labs";
+  B8 = 580000;
+  C8 = "Negotiation";
+  D8 = "2025-10-20";
+  E8 = "David Kim";
+  F8 = 75;
+  
+  A9 = "SmartTech Solutions";
+  B9 = 520000;
+  C9 = "Closed Won";
+  D9 = "2025-09-15";
+  E9 = "Sarah Chen";
+  F9 = 100;
+  
+  A10 = "Future Systems";
+  B10 = 480000;
+  C10 = "Discovery";
+  D10 = "2025-12-15";
+  E10 = "Lisa Rodriguez";
+  F10 = 35;
+  
+  A11 = "Quantum Corp";
+  B11 = 450000;
+  C11 = "Proposal";
+  D11 = "2025-11-05";
+  E11 = "Michael Torres";
+  F11 = 55;
+  
+  A13 = "Total Pipeline";
+  B13 = =SUM(B2:B11);
+  F13 = =AVERAGE(F2:F11);
+}
+
+@sheet {
+  name: "Rep Performance";
+  cols: [Sales_Rep, Deals, Revenue, Target, Attainment, Avg_Deal];
+  
+  A1 = "Sales Representative";
+  B1 = "Deals Closed";
+  C1 = "Revenue";
+  D1 = "Q3 Target";
+  E1 = "Attainment %";
+  F1 = "Avg Deal Size";
+  
+  A2 = "Sarah Chen";
+  B2 = 68;
+  C2 = 4850000;
+  D2 = 4000000;
+  E2 = =C2/D2*100;
+  F2 = =C2/B2;
+  
+  A3 = "Michael Torres";
+  B3 = 52;
+  C3 = 3920000;
+  D3 = 3500000;
+  E3 = =C3/D3*100;
+  F3 = =C3/B3;
+  
+  A4 = "David Kim";
+  B4 = 61;
+  C4 = 3680000;
+  D4 = 3500000;
+  E4 = =C4/D4*100;
+  F4 = =C4/B4;
+  
+  A5 = "Lisa Rodriguez";
+  B5 = 53;
+  C5 = 3800000;
+  D5 = 4000000;
+  E5 = =C5/D5*100;
+  F5 = =C5/B5;
+  
+  A7 = "Team Total";
+  B7 = =SUM(B2:B5);
+  C7 = =SUM(C2:C5);
+  D7 = =SUM(D2:D5);
+  E7 = =C7/D7*100;
+  F7 = =AVERAGE(F2:F5);
+}
+
+@sheet {
+  name: "Product Mix";
+  cols: [Product, Units, Revenue, Percent_Total, Avg_Price];
+  
+  A1 = "Product Line";
+  B1 = "Units Sold";
+  C1 = "Revenue";
+  D1 = "% of Total";
+  E1 = "Avg Price";
+  
+  A2 = "Enterprise Suite";
+  B2 = 42;
+  C2 = 6300000;
+  D2 = 0;
+  E2 = =C2/B2;
+  
+  A3 = "Professional Plan";
+  B3 = 156;
+  C3 = 4680000;
+  D3 = 0;
+  E3 = =C3/B3;
+  
+  A4 = "Starter Pack";
+  B4 = 342;
+  C4 = 3420000;
+  D4 = 0;
+  E4 = =C4/B4;
+  
+  A5 = "Add-ons";
+  B5 = 528;
+  C5 = 1850000;
+  D5 = 0;
+  E5 = =C5/B5;
+  
+  A7 = "Total";
+  B7 = =SUM(B2:B5);
+  C7 = =SUM(C2:C5);
+  E7 = =C7/B7;
+  
+  // Calculate percentages after total
+  D2 = =C2/$C$7*100;
+  D3 = =C3/$C$7*100;
+  D4 = =C4/$C$7*100;
+  D5 = =C5/$C$7*100;
+  D7 = 100;
+}
+
+@doc {
+  # Sales Dashboard Guide
+  
+  This dashboard provides comprehensive Q3 2025 sales performance metrics.
+  
+  ## Sheets Overview
+  
+  ### 1. Summary Dashboard
+  Key metrics at a glance with target vs actual comparison.
+  
+  **Green highlights**: Performance above target  
+  **Red highlights**: Performance below target
+  
+  ### 2. Monthly Performance
+  Month-by-month breakdown of revenue and customer metrics.
+  
+  **Key insight**: Consistent month-over-month growth in Q3.
+  
+  ### 3. Sales by Region
+  Geographic distribution of revenue across four regions.
+  
+  **Top performer**: North America (35% of revenue)  
+  **Fastest growth**: APAC (+15% QoQ)
+  
+  ### 4. Top Deals
+  Pipeline of major opportunities >$450K.
+  
+  **Total pipeline**: $9.5M  
+  **Weighted pipeline**: $6.1M (using probability)
+  
+  ### 5. Rep Performance
+  Individual sales rep metrics and quota attainment.
+  
+  **Top performer**: Sarah Chen (121% attainment)  
+  **Team average**: 108% attainment
+  
+  ### 6. Product Mix
+  Revenue distribution across product lines.
+  
+  **Best seller**: Enterprise Suite (39% of revenue)  
+  **Volume leader**: Add-ons (528 units)
+  
+  ## How to Use
+  
+  1. **Weekly Review**: Check Summary Dashboard every Monday
+  2. **Monthly Close**: Review all sheets at month end
+  3. **Forecasting**: Use Top Deals × Probability for projections
+  4. **Planning**: Analyze Regional and Product Mix for strategy
+  
+  ## Formulas Explained
+  
+  **Variance**: `=Actual - Target`  
+  **Attainment %**: `=Actual / Target * 100`  
+  **Growth %**: `=(Current - Previous) / Previous * 100`  
+  **Average**: `=SUM(range) / COUNT(range)`
+  
+  ## Custom Views
+  
+  Create pivot tables for additional analysis:
+  - Revenue by month by region
+  - Win rate by product
+  - Average sales cycle by deal size
+  - Commission calculations
+  
+  ## Refresh Schedule
+  
+  - **Real-time**: CRM integration (hourly sync)
+  - **Daily**: Closed deals update at 6am
+  - **Weekly**: Pipeline review every Monday
+  - **Monthly**: Full reconciliation on 1st of month
+}

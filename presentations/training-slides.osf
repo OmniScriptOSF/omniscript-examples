@@ -1,0 +1,743 @@
+// =============================================================================
+// Example: Training Slides
+// Category: Presentations
+// Description: Educational training materials with learning objectives
+// Features: Learning outcomes, interactive elements, assessments
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "Git Fundamentals - Developer Training";
+  author: "Engineering Training Team";
+  date: "2025-10-15";
+  theme: modern;
+}
+
+@slide {
+  title: "Git Fundamentals";
+  layout: TitleOnly;
+}
+
+@slide {
+  title: "Welcome to Git Training!";
+  layout: TitleAndContent;
+  
+  ## About This Training
+  
+  **Duration**: 2 hours  
+  **Level**: Beginner to Intermediate  
+  **Prerequisites**: Basic command line knowledge
+  
+  **What You'll Learn**:
+  - Git basics and core concepts
+  - Essential workflows
+  - Branching strategies
+  - Collaboration techniques
+  - Best practices
+}
+
+@slide {
+  title: "Learning Objectives";
+  layout: TitleAndContent;
+  
+  By the end of this training, you will be able to:
+  
+  ✅ Understand Git's data model  
+  ✅ Create and manage repositories  
+  ✅ Make commits with clear messages  
+  ✅ Work with branches effectively  
+  ✅ Collaborate using pull requests  
+  ✅ Resolve merge conflicts  
+  ✅ Apply best practices in daily work
+}
+
+@slide {
+  title: "What is Git?";
+  layout: TitleAndContent;
+  
+  ## Distributed Version Control System
+  
+  Git is a tool that tracks changes to files over time, enabling:
+  
+  - **Version History**: See what changed, when, and why
+  - **Collaboration**: Multiple people working on same code
+  - **Branching**: Experiment without breaking main code
+  - **Backup**: Distributed copies protect against loss
+  
+  **Created by**: Linus Torvalds (2005)  
+  **Used by**: 97% of developers worldwide
+}
+
+@slide {
+  title: "Git vs Other VCS";
+  layout: TwoColumn;
+  
+  ## Centralized (SVN, Perforce)
+  
+  - Single server holds history
+  - Must be online to commit
+  - Slower operations
+  - Single point of failure
+  
+  ## Distributed (Git, Mercurial)
+  
+  - Every copy has full history
+  - Commit offline
+  - Fast operations
+  - No single point of failure
+  - Better branching
+}
+
+@slide {
+  title: "Git's Data Model";
+  layout: TitleAndContent;
+  
+  ## Three Key Concepts
+  
+  ### 1. Snapshots, Not Differences
+  Git stores complete snapshots of files, not just changes
+  
+  ### 2. Nearly Everything is Local
+  Most operations work on local repo, very fast
+  
+  ### 3. Git Has Integrity
+  Everything is checksummed (SHA-1), can't lose data silently
+  
+  **Think of Git as a database of snapshots**
+}
+
+@slide {
+  title: "The Three States";
+  layout: TitleAndContent;
+  
+  ## Files can be in three states:
+  
+  ### 1. Modified
+  - You've changed the file
+  - Not yet staged
+  
+  ### 2. Staged
+  - Marked for next commit
+  - In the "staging area"
+  
+  ### 3. Committed
+  - Safely stored in Git database
+  - Part of project history
+  
+  **Workflow**: Modify → Stage → Commit
+}
+
+@slide {
+  title: "Installing Git";
+  layout: TwoColumn;
+  
+  ## Windows
+  
+  Download from git-scm.com
+  
+  Or use package manager:
+  ```
+  winget install Git.Git
+  ```
+  
+  ## Mac
+  
+  Install via Homebrew:
+  ```
+  brew install git
+  ```
+  
+  Or download from git-scm.com
+  
+  ## Linux
+  
+  Ubuntu/Debian:
+  ```
+  sudo apt install git
+  ```
+  
+  Fedora:
+  ```
+  sudo dnf install git
+  ```
+}
+
+@slide {
+  title: "Configuration";
+  layout: TitleAndContent;
+  
+  ## Set Your Identity
+  
+  First time setup (required):
+  
+  ```bash
+  git config --global user.name "Your Name"
+  git config --global user.email "you@example.com"
+  ```
+  
+  ## Useful Settings
+  
+  ```bash
+  # Default branch name
+  git config --global init.defaultBranch main
+  
+  # Default editor
+  git config --global core.editor "code --wait"
+  
+  # Colorful output
+  git config --global color.ui auto
+  ```
+}
+
+@slide {
+  title: "Creating a Repository";
+  layout: TitleAndContent;
+  
+  ## Two Ways to Start
+  
+  ### 1. Initialize New Repo
+  ```bash
+  mkdir my-project
+  cd my-project
+  git init
+  ```
+  
+  ### 2. Clone Existing Repo
+  ```bash
+  git clone https://github.com/user/repo.git
+  cd repo
+  ```
+  
+  **What happens**: Git creates a `.git` directory to store all version history
+}
+
+@slide {
+  title: "Basic Workflow";
+  layout: TitleAndContent;
+  
+  ## The Daily Git Cycle
+  
+  ```bash
+  # 1. Check status
+  git status
+  
+  # 2. Make changes to files
+  # (edit, create, delete files)
+  
+  # 3. Stage changes
+  git add filename.txt
+  git add .  # stage all changes
+  
+  # 4. Commit with message
+  git commit -m "Add user authentication feature"
+  
+  # 5. Push to remote
+  git push origin main
+  ```
+}
+
+@slide {
+  title: "Hands-On Exercise #1";
+  layout: TitleAndContent;
+  
+  ## Create Your First Repo
+  
+  **Steps**:
+  
+  1. Create directory: `mkdir git-practice`
+  2. Enter directory: `cd git-practice`
+  3. Initialize Git: `git init`
+  4. Create file: `echo "# My Project" > README.md`
+  5. Check status: `git status`
+  6. Stage file: `git add README.md`
+  7. Commit: `git commit -m "Initial commit"`
+  8. View history: `git log`
+  
+  **Time**: 5 minutes
+}
+
+@slide {
+  title: "Writing Good Commit Messages";
+  layout: TitleAndContent;
+  
+  ## Best Practices
+  
+  ### Good Messages
+  ✅ `Add user authentication with JWT tokens`  
+  ✅ `Fix memory leak in file upload handler`  
+  ✅ `Update README with installation instructions`
+  
+  ### Bad Messages
+  ❌ `Fix bug`  
+  ❌ `WIP`  
+  ❌ `asdfasdf`  
+  ❌ `More changes`
+  
+  ### Format
+  ```
+  Short summary (50 chars or less)
+  
+  Detailed explanation if needed.
+  Explain what and why, not how.
+  ```
+}
+
+@slide {
+  title: "Viewing History";
+  layout: TitleAndContent;
+  
+  ## Git Log Commands
+  
+  ```bash
+  # Basic log
+  git log
+  
+  # One line per commit
+  git log --oneline
+  
+  # With graph
+  git log --oneline --graph --all
+  
+  # Last 5 commits
+  git log -5
+  
+  # Specific file
+  git log -- filename.txt
+  
+  # Search commits
+  git log --grep="bug fix"
+  ```
+}
+
+@slide {
+  title: "Branching Basics";
+  layout: TitleAndContent;
+  
+  ## Why Branches?
+  
+  Branches let you:
+  - Develop features independently
+  - Experiment safely
+  - Work on multiple things simultaneously
+  - Keep main branch stable
+  
+  ## Creating Branches
+  
+  ```bash
+  # Create new branch
+  git branch feature-login
+  
+  # Switch to branch
+  git checkout feature-login
+  
+  # Create and switch (shortcut)
+  git checkout -b feature-login
+  ```
+}
+
+@slide {
+  title: "Branching Workflow";
+  layout: TitleAndContent;
+  
+  ## Common Pattern
+  
+  ```bash
+  # Start from main
+  git checkout main
+  git pull origin main
+  
+  # Create feature branch
+  git checkout -b feature-awesome
+  
+  # Make changes and commit
+  git add .
+  git commit -m "Implement awesome feature"
+  
+  # Push to remote
+  git push origin feature-awesome
+  
+  # Create pull request on GitHub
+  # After review and merge, delete branch
+  git branch -d feature-awesome
+  ```
+}
+
+@slide {
+  title: "Merging Branches";
+  layout: TitleAndContent;
+  
+  ## Bringing Changes Together
+  
+  ```bash
+  # Switch to target branch
+  git checkout main
+  
+  # Merge feature branch
+  git merge feature-login
+  ```
+  
+  ## Merge Types
+  
+  **Fast-forward**: No divergent changes, just moves pointer  
+  **Three-way merge**: Combines divergent changes, creates merge commit
+}
+
+@slide {
+  title: "Merge Conflicts";
+  layout: TitleAndContent;
+  
+  ## What Are They?
+  
+  Conflicts occur when Git can't automatically merge changes because two branches modified the same lines.
+  
+  ## Resolving Conflicts
+  
+  ```bash
+  # Git marks conflicts in file:
+  <<<<<<< HEAD
+  Your changes
+  =======
+  Their changes
+  >>>>>>> feature-branch
+  
+  # Steps:
+  # 1. Edit file, remove markers, keep desired code
+  # 2. Stage resolved file: git add filename
+  # 3. Complete merge: git commit
+  ```
+}
+
+@slide {
+  title: "Hands-On Exercise #2";
+  layout: TitleAndContent;
+  
+  ## Practice Branching
+  
+  **Tasks**:
+  
+  1. Create branch: `git checkout -b feature-header`
+  2. Create file: `echo "# Welcome" > header.md`
+  3. Commit: `git add header.md && git commit -m "Add header"`
+  4. Switch back: `git checkout main`
+  5. Merge: `git merge feature-header`
+  6. Delete branch: `git branch -d feature-header`
+  7. View log: `git log --oneline --graph`
+  
+  **Time**: 5 minutes
+}
+
+@slide {
+  title: "Remote Repositories";
+  layout: TitleAndContent;
+  
+  ## Working with GitHub/GitLab
+  
+  ```bash
+  # Add remote
+  git remote add origin https://github.com/user/repo.git
+  
+  # View remotes
+  git remote -v
+  
+  # Push to remote
+  git push origin main
+  
+  # Pull from remote
+  git pull origin main
+  
+  # Fetch (download without merging)
+  git fetch origin
+  ```
+}
+
+@slide {
+  title: "Pull Requests";
+  layout: TitleAndContent;
+  
+  ## Collaborative Code Review
+  
+  **What is a PR?**  
+  Proposal to merge your branch into another branch
+  
+  **Workflow**:
+  
+  1. Push branch to remote
+  2. Open PR on GitHub/GitLab
+  3. Team reviews code
+  4. Address feedback with new commits
+  5. Maintainer merges PR
+  6. Delete feature branch
+  
+  **Best Practices**: Small PRs, clear descriptions, respond to feedback promptly
+}
+
+@slide {
+  title: "Common Commands Cheat Sheet";
+  layout: TwoColumn;
+  
+  ## Daily Use
+  
+  ```bash
+  git status
+  git add .
+  git commit -m "msg"
+  git push
+  git pull
+  git log --oneline
+  ```
+  
+  ## Branching
+  
+  ```bash
+  git branch
+  git checkout -b name
+  git merge branch
+  git branch -d name
+  ```
+  
+  ## Undo/Fix
+  
+  ```bash
+  git reset HEAD file
+  git checkout -- file
+  git commit --amend
+  git revert commit
+  ```
+  
+  ## Info
+  
+  ```bash
+  git diff
+  git show commit
+  git remote -v
+  git log --graph
+  ```
+}
+
+@slide {
+  title: "Git Best Practices";
+  layout: TitleAndContent;
+  
+  ## Do's and Don'ts
+  
+  ### ✅ Do
+  - Commit early and often
+  - Write clear commit messages
+  - Use branches for features
+  - Pull before you push
+  - Review your changes before committing
+  
+  ### ❌ Don't
+  - Commit secrets or credentials
+  - Force push to shared branches
+  - Commit generated files
+  - Make huge commits with mixed changes
+  - Skip code reviews
+}
+
+@slide {
+  title: "Ignoring Files";
+  layout: TitleAndContent;
+  
+  ## .gitignore
+  
+  Tell Git which files to never track:
+  
+  ```
+  # .gitignore file
+  
+  # Dependencies
+  node_modules/
+  
+  # Build outputs
+  dist/
+  build/
+  
+  # IDE files
+  .vscode/
+  .idea/
+  
+  # OS files
+  .DS_Store
+  Thumbs.db
+  
+  # Secrets
+  .env
+  *.key
+  ```
+}
+
+@slide {
+  title: "Advanced Topics (Preview)";
+  layout: TitleAndContent;
+  
+  ## Beyond Basics
+  
+  Topics for further learning:
+  
+  - **Rebasing**: Alternative to merging
+  - **Stashing**: Temporary save changes
+  - **Cherry-picking**: Apply specific commits
+  - **Tagging**: Mark releases
+  - **Submodules**: Nested repositories
+  - **Hooks**: Automation triggers
+  - **Bisect**: Find bugs in history
+  
+  *Covered in "Advanced Git" training*
+}
+
+@slide {
+  title: "Common Mistakes & Fixes";
+  layout: TitleAndContent;
+  
+  ## Oops, I...
+  
+  ### ...committed to wrong branch
+  ```bash
+  git log  # note commit hash
+  git checkout correct-branch
+  git cherry-pick <hash>
+  ```
+  
+  ### ...need to undo last commit
+  ```bash
+  git reset --soft HEAD~1  # keeps changes
+  git reset --hard HEAD~1  # discards changes
+  ```
+  
+  ### ...accidentally deleted a file
+  ```bash
+  git checkout -- filename
+  ```
+}
+
+@slide {
+  title: "Resources for Learning";
+  layout: TitleAndContent;
+  
+  ## Continue Your Git Journey
+  
+  **Official**:
+  - Git documentation: git-scm.com/doc
+  - Pro Git book (free): git-scm.com/book
+  
+  **Interactive**:
+  - Learn Git Branching: learngitbranching.js.org
+  - GitHub Skills: skills.github.com
+  
+  **Cheat Sheets**:
+  - GitHub cheat sheet: education.github.com/git-cheat-sheet
+  - Atlassian Git tutorials: atlassian.com/git
+  
+  **Practice**:
+  - Create personal projects
+  - Contribute to open source
+}
+
+@slide {
+  title: "Final Quiz";
+  layout: TitleAndContent;
+  
+  ## Test Your Knowledge
+  
+  1. What command creates a new branch and switches to it?
+  2. What are the three states files can be in?
+  3. What's the difference between `git pull` and `git fetch`?
+  4. How do you undo changes to a file before staging?
+  5. What should you do before pushing to a shared branch?
+  
+  **Answers in training materials**
+  
+  **Time**: 5 minutes
+}
+
+@slide {
+  title: "Hands-On Final Exercise";
+  layout: TitleAndContent;
+  
+  ## Complete Workflow
+  
+  **Scenario**: Add a new feature to a team project
+  
+  1. Clone repo: `git clone <url>`
+  2. Create branch: `git checkout -b add-footer`
+  3. Create footer.html with your name
+  4. Stage: `git add footer.html`
+  5. Commit: `git commit -m "Add footer with author info"`
+  6. Push: `git push origin add-footer`
+  7. Open PR on GitHub
+  8. Request review from instructor
+  
+  **Time**: 10 minutes
+}
+
+@slide {
+  title: "Key Takeaways";
+  layout: TitleAndContent;
+  
+  ## Remember These Core Concepts
+  
+  1. **Git = Version Control Database**  
+     Tracks snapshots of your project over time
+  
+  2. **Branch Early, Branch Often**  
+     Branches are cheap, use them for every feature
+  
+  3. **Commit Messages Matter**  
+     Future you will thank present you
+  
+  4. **Pull Before Push**  
+     Keep your local repo in sync
+  
+  5. **Practice, Practice, Practice**  
+     Git proficiency comes with daily use
+}
+
+@slide {
+  title: "Next Steps";
+  layout: TitleAndContent;
+  
+  ## After This Training
+  
+  **Immediate Actions**:
+  - Complete the final exercise
+  - Set up Git on your work machine
+  - Configure your identity and preferences
+  - Clone your first team repository
+  
+  **This Week**:
+  - Use Git for daily work
+  - Create at least 5 commits with good messages
+  - Create and merge one feature branch
+  
+  **This Month**:
+  - Sign up for "Advanced Git" training
+  - Help a colleague with Git questions
+  - Contribute to open source project
+}
+
+@slide {
+  title: "Questions & Discussion";
+  layout: TitleOnly;
+}
+
+@slide {
+  title: "Thank You!";
+  layout: TitleAndContent;
+  
+  ## You're Now a Git User!
+  
+  **Training Resources**: Available on company intranet  
+  **Slack Channel**: #git-help  
+  **Office Hours**: Tuesdays 2-3pm
+  
+  **Contact Instructor**:
+  - Email: training@company.com
+  - Slack: @git-trainer
+  
+  **Certificate**: Will be emailed within 24 hours
+  
+  ---
+  
+  *Happy committing!* 🚀
+}

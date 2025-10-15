@@ -1,0 +1,397 @@
+// =============================================================================
+// Example: Quarterly Review
+// Category: Presentations
+// Description: Business quarterly review presentation with metrics
+// Features: Performance data, charts placeholder, business metrics
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "Q3 2025 Quarterly Business Review";
+  author: "Executive Team";
+  date: "2025-10-15";
+  theme: corporate;
+}
+
+@slide {
+  title: "Q3 2025 Quarterly Review";
+  layout: TitleOnly;
+}
+
+@slide {
+  title: "Agenda";
+  layout: TitleAndContent;
+  
+  ## Today's Review
+  
+  1. Executive Summary
+  2. Financial Performance
+  3. Product & Engineering
+  4. Sales & Marketing
+  5. Customer Success
+  6. People & Operations
+  7. Q4 Outlook
+}
+
+@slide {
+  title: "Executive Summary";
+  layout: TitleAndContent;
+  
+  ## Strong Q3 Performance
+  
+  **Key Highlights**:
+  
+  - 💰 Revenue: $52.3M (+28% YoY)
+  - 👥 Customers: 12,458 (+35% YoY)
+  - ❤️ Retention: 94% (target: 92%)
+  - 🚀 Product Launches: 3 major features
+  - 📈 ARR: $185M (+32% YoY)
+  
+  **Status**: ✅ Exceeded all targets
+}
+
+@slide {
+  title: "Financial Performance";
+  layout: TwoColumn;
+  
+  ## Revenue Growth
+  
+  - Q3 Revenue: $52.3M
+  - Q3 Target: $50M
+  - Beat target: +4.6%
+  - YoY Growth: +28%
+  - QoQ Growth: +12%
+  
+  ## Profitability
+  
+  - Gross Margin: 72%
+  - Operating Margin: 18%
+  - Net Income: $6.8M
+  - EBITDA: $9.4M
+  - Cash Position: $45M
+}
+
+@slide {
+  title: "Revenue by Segment";
+  layout: TitleAndContent;
+  
+  ## Diversified Growth
+  
+  | Segment | Q3 Revenue | % of Total | YoY Growth |
+  |---------|------------|------------|------------|
+  | Subscription | $45.2M | 86% | +30% |
+  | Professional Services | $5.1M | 10% | +18% |
+  | Other | $2.0M | 4% | +22% |
+  | **Total** | **$52.3M** | **100%** | **+28%** |
+  
+  **Insight**: Subscription revenue remains core driver
+}
+
+@slide {
+  title: "Customer Metrics";
+  layout: TitleAndContent;
+  
+  ## Healthy Growth Across All Tiers
+  
+  **New Customers**: 1,247 added in Q3
+  
+  **By Segment**:
+  - Enterprise (>1000 users): 127 customers, 42% of revenue
+  - Mid-Market (100-999): 356 customers, 38% of revenue
+  - Small Business (<100): 764 customers, 20% of revenue
+  
+  **Retention**: 94% (best quarter ever)
+  
+  **NPS**: 67 (world-class, +3 from Q2)
+}
+
+@slide {
+  title: "Product Releases";
+  layout: TitleAndContent;
+  
+  ## Three Major Launches
+  
+  ### 🤖 AI Analytics Dashboard (July)
+  - 78% adoption rate
+  - Avg 4.2 hours saved per user/week
+  - 4.6/5 user satisfaction
+  
+  ### 📱 Mobile App v3.0 (August)
+  - Complete UI redesign
+  - 4.8/5 stars in app stores
+  - 50K+ downloads first month
+  
+  ### ⚡ API v2.0 (September)
+  - 3x performance improvement
+  - 50+ new endpoints
+  - 85% developer satisfaction
+}
+
+@slide {
+  title: "Engineering Velocity";
+  layout: TwoColumn;
+  
+  ## Productivity Metrics
+  
+  - Deploy frequency: 3x/week
+  - Lead time: 2.3 days
+  - MTTR: 1.2 hours
+  - Change failure: 2.1%
+  
+  ## Team Growth
+  
+  - Engineers: 48 (+22 in Q3)
+  - Products shipped: 3 major
+  - Bug fix rate: 94%
+  - Tech debt: -15%
+}
+
+@slide {
+  title: "Sales Performance";
+  layout: TitleAndContent;
+  
+  ## Record Breaking Quarter
+  
+  **Pipeline**: $87M (up 45% from Q2)
+  
+  **Wins**:
+  - Total deals: 1,247
+  - Enterprise wins: 127
+  - Average deal size: $42K (up from $38K)
+  - Win rate: 32% (target: 28%)
+  
+  **Sales Cycle**: 47 days (down from 52)
+  
+  **Top Deals**:
+  - GlobalTech: $2.1M (3-year)
+  - MegaCorp: $1.8M (5-year)
+  - TechStart: $950K (2-year)
+}
+
+@slide {
+  title: "Marketing Results";
+  layout: TitleAndContent;
+  
+  ## Strong Lead Generation
+  
+  **Channels Performance**:
+  
+  - Website traffic: 2.8M visits (+62%)
+  - Leads generated: 8,450 (+48%)
+  - Conversion rate: 3.2% (up from 2.8%)
+  - Cost per acquisition: $425 (down 15%)
+  
+  **Campaigns**:
+  - "Transform Your Workflow": 45% conversion
+  - Customer case studies: 12 published
+  - Webinar series: 5,000+ attendees
+  - Conference presence: 4 major events
+}
+
+@slide {
+  title: "Customer Success";
+  layout: TitleAndContent;
+  
+  ## Exceptional Service Delivery
+  
+  **Support Metrics**:
+  - Response time: 2.3 hours (target: <4)
+  - Resolution time: 8.5 hours (target: <12)
+  - CSAT: 4.6/5 stars
+  - Ticket volume: Down 22% (better product!)
+  
+  **Expansion**:
+  - Upsells: $3.2M ARR
+  - Cross-sells: $1.8M ARR
+  - Account expansion: 67% of customers
+}
+
+@slide {
+  title: "People & Culture";
+  layout: TwoColumn;
+  
+  ## Team Growth
+  
+  - Total headcount: 312
+  - New hires: 48
+  - Retention: 96%
+  - Diversity: 42% women
+  - eNPS: 72 (excellent)
+  
+  ## Initiatives
+  
+  - Leadership training: 24 leaders
+  - Mentorship program: Launched
+  - Remote work policy: Updated
+  - Wellness benefits: Enhanced
+  - Team offsites: 4 completed
+}
+
+@slide {
+  title: "Operational Excellence";
+  layout: TitleAndContent;
+  
+  ## Infrastructure & Reliability
+  
+  **System Performance**:
+  - Uptime: 99.98% (target: 99.95%)
+  - P50 latency: 18ms (target: <25ms)
+  - P99 latency: 95ms (target: <150ms)
+  - Zero security incidents
+  
+  **Cost Optimization**:
+  - Infrastructure costs: -12% per customer
+  - Cloud spend optimization: $180K saved
+  - Tool consolidation: $45K annual savings
+}
+
+@slide {
+  title: "Challenges & Learnings";
+  layout: TitleAndContent;
+  
+  ## Areas for Improvement
+  
+  ### 1. Competition Intensifying
+  - **Issue**: New well-funded competitor launched
+  - **Action**: Accelerate differentiation roadmap
+  
+  ### 2. Hiring Velocity
+  - **Issue**: Hard to find senior engineers
+  - **Action**: Enhanced referral program, employer branding
+  
+  ### 3. Infrastructure Scaling
+  - **Issue**: Costs growing faster than revenue
+  - **Action**: Optimization initiative, tiered pricing
+  
+  ### 4. SMB Churn
+  - **Issue**: Higher churn in small business segment
+  - **Action**: Improved onboarding, self-service resources
+}
+
+@slide {
+  title: "Q4 2025 Targets";
+  layout: TitleAndContent;
+  
+  ## Ambitious but Achievable Goals
+  
+  **Financial**:
+  - Revenue: $58M (+11% QoQ)
+  - Operating margin: 18% (maintain)
+  - ARR: $210M
+  
+  **Growth**:
+  - New customers: 1,400
+  - Retention: 95%
+  - NPS: 70
+  
+  **Product**:
+  - 2 major releases
+  - 4 feature updates
+  - 10+ integrations
+  
+  **Team**:
+  - 35 new hires
+  - 97% retention
+  - eNPS: 75
+}
+
+@slide {
+  title: "Q4 Strategic Priorities";
+  layout: TitleAndContent;
+  
+  ## Focus Areas
+  
+  ### 1. Revenue Acceleration
+  - Enterprise segment focus
+  - Expand in existing accounts
+  - Launch annual billing discount
+  
+  ### 2. Product Excellence
+  - Deliver roadmap on schedule
+  - Quality over speed
+  - Technical debt reduction
+  
+  ### 3. Customer Success
+  - Reduce SMB churn to <8%
+  - Expand CS team by 8
+  - Launch customer academy
+  
+  ### 4. Operational Efficiency
+  - Infrastructure cost per customer: -15%
+  - Automation initiatives
+  - Process optimization
+  
+  ### 5. Team Development
+  - Leadership bench strength
+  - Diversity hiring goals
+  - Culture investments
+}
+
+@slide {
+  title: "Key Risks & Mitigation";
+  layout: TwoColumn;
+  
+  ## Identified Risks
+  
+  1. Market competition
+  2. Economic uncertainty
+  3. Talent retention
+  4. Technology changes
+  5. Security threats
+  
+  ## Mitigation Plans
+  
+  1. Product differentiation
+  2. Diversified customer base
+  3. Comp review, culture focus
+  4. R&D investment
+  5. Security audits, insurance
+}
+
+@slide {
+  title: "Board Asks";
+  layout: TitleAndContent;
+  
+  ## Requests for Board Support
+  
+  ### 1. Strategic Hiring
+  - **Ask**: Approve 2 VP-level hires (Sales, Engineering)
+  - **Rationale**: Scale leadership for next phase
+  - **Budget**: $500K annual comp
+  
+  ### 2. M&A Exploration
+  - **Ask**: Approve budget for acquisition search
+  - **Rationale**: Accelerate capabilities in AI/analytics
+  - **Budget**: $50K for consultants
+  
+  ### 3. International Expansion
+  - **Ask**: Green light for EMEA office (London)
+  - **Rationale**: 30% of leads from Europe
+  - **Budget**: $200K setup costs
+}
+
+@slide {
+  title: "Conclusion";
+  layout: TitleAndContent;
+  
+  ## Exceptional Quarter, Exciting Future
+  
+  **Q3 Achievements**:
+  - ✅ Beat all financial targets
+  - ✅ Successful product launches
+  - ✅ Record customer growth
+  - ✅ World-class retention
+  
+  **Q4 Focus**:
+  - 🎯 Sustain growth momentum
+  - 🎯 Execute strategic priorities
+  - 🎯 Invest in team & culture
+  - 🎯 Position for 2026 success
+  
+  **Thank you to the entire team for an outstanding quarter!**
+}
+
+@slide {
+  title: "Questions?";
+  layout: TitleOnly;
+}

@@ -1,0 +1,118 @@
+// =============================================================================
+// Example: Basic Spreadsheet
+// Category: Getting Started
+// Description: Create spreadsheets with data and formulas
+// Features: @sheet blocks, cell references, formulas, columns
+// Estimated time: 10 minutes
+// =============================================================================
+
+@meta {
+  title: "Sales Tracker";
+  author: "OmniScript Team";
+  date: "2025-10-15";
+  theme: corporate;
+}
+
+// Simple sales tracking spreadsheet
+@sheet {
+  name: "Q1 Sales";
+  cols: [Product, Units, Price, Revenue];
+  
+  // Header row (row 1)
+  A1 = "Product";
+  B1 = "Units";
+  C1 = "Price";
+  D1 = "Revenue";
+  
+  // Data rows
+  A2 = "Widget A";
+  B2 = 150;
+  C2 = 29.99;
+  D2 = =B2*C2;  // Formula: Units × Price
+  
+  A3 = "Widget B";
+  B3 = 200;
+  C3 = 39.99;
+  D3 = =B3*C3;
+  
+  A4 = "Widget C";
+  B4 = 75;
+  C4 = 49.99;
+  D4 = =B4*C4;
+  
+  A5 = "Widget D";
+  B5 = 300;
+  C5 = 19.99;
+  D5 = =B5*C5;
+  
+  // Total row
+  A6 = "TOTAL";
+  B6 = =SUM(B2:B5);  // Sum all units
+  C6 = "";
+  D6 = =SUM(D2:D5);  // Sum all revenue
+}
+
+// Monthly comparison sheet
+@sheet {
+  name: "Monthly Comparison";
+  cols: [Month, Revenue, Growth];
+  
+  A1 = "Month";
+  B1 = "Revenue";
+  C1 = "Growth %";
+  
+  A2 = "January";
+  B2 = 45000;
+  C2 = "";
+  
+  A3 = "February";
+  B3 = 52000;
+  C3 = =(B3-B2)/B2*100;  // Growth percentage
+  
+  A4 = "March";
+  B4 = 58000;
+  C4 = =(B4-B3)/B3*100;
+  
+  A5 = "Q1 Total";
+  B5 = =SUM(B2:B4);
+  C5 = =(B5-B2)/B2*100;  // Overall Q1 growth
+}
+
+// Document explanation
+@doc {
+  # Spreadsheet Features
+  
+  This example demonstrates key spreadsheet features in OSF:
+  
+  ## Cell References
+  
+  Use Excel-style cell references like `A1`, `B2`, `C3`
+  
+  ## Formulas
+  
+  Prefix formulas with `=` sign:
+  
+  - **Arithmetic**: `=B2*C2` (multiply units by price)
+  - **Functions**: `=SUM(B2:B5)` (sum a range)
+  - **Percentages**: `=(B3-B2)/B2*100` (calculate growth)
+  
+  ## Multiple Sheets
+  
+  You can have multiple `@sheet` blocks in one file, each creating a separate worksheet in the exported Excel file.
+  
+  ## Supported Functions
+  
+  - `SUM(range)` - Sum values
+  - `AVERAGE(range)` - Calculate average
+  - `COUNT(range)` - Count cells
+  - `MAX(range)` - Maximum value
+  - `MIN(range)` - Minimum value
+  - `IF(condition, true_value, false_value)` - Conditional logic
+  
+  ## Pro Tips
+  
+  1. Keep formulas simple for better readability
+  2. Use named columns for clarity
+  3. Comment complex calculations
+  4. Test formulas in Excel after export
+}

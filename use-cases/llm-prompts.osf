@@ -1,0 +1,478 @@
+// =============================================================================
+// Example: LLM Prompts Documentation
+// Category: Use Cases
+// Description: Document AI/LLM prompts and responses for knowledge management
+// Features: Code blocks, structured documentation, versioning
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "AI Prompt Library";
+  author: "AI Team";
+  date: "2025-10-15";
+  version: "2.0";
+  theme: technical;
+}
+
+@doc {
+  # AI Prompt Library
+  ## Best Practices and Templates
+  
+  This document serves as a **centralized knowledge base** for our team's AI prompts, including best practices, examples, and version history.
+  
+  ---
+  
+  ## Why Document Prompts in OSF?
+  
+  1. **Version Control**: Track prompt evolution with Git
+  2. **Collaboration**: Team members can review and improve prompts
+  3. **Knowledge Sharing**: Onboard new team members faster
+  4. **Multi-Format Export**: Share as PDF, DOCX, or presentations
+  5. **AI-Friendly**: LLMs can read and learn from this format
+  
+  ---
+  
+  # Code Generation Prompts
+  
+  ## Python Function Generator
+  
+  **Purpose**: Generate well-documented Python functions with type hints and tests
+  
+  **Prompt Template**:
+  
+  ```
+  Create a Python function that [DESCRIPTION].
+  
+  Requirements:
+  - Use type hints for all parameters and return value
+  - Add comprehensive docstring (Google style)
+  - Include error handling for edge cases
+  - Write 3-5 unit tests using pytest
+  - Follow PEP 8 style guidelines
+  
+  Function signature: def [FUNCTION_NAME]([PARAMETERS]) -> [RETURN_TYPE]:
+  ```
+  
+  **Example Use**:
+  
+  ```
+  Create a Python function that validates email addresses.
+  
+  Requirements:
+  - Use type hints for all parameters and return value
+  - Add comprehensive docstring (Google style)
+  - Include error handling for edge cases
+  - Write 3-5 unit tests using pytest
+  - Follow PEP 8 style guidelines
+  
+  Function signature: def validate_email(email: str) -> bool:
+  ```
+  
+  **Response Quality**: ⭐⭐⭐⭐⭐ (5/5)  
+  **Tokens Used**: ~800  
+  **Model**: GPT-4
+  
+  ---
+  
+  ## TypeScript React Component
+  
+  **Purpose**: Generate modern React components with TypeScript
+  
+  **Prompt Template**:
+  
+  ```
+  Create a React component in TypeScript for [DESCRIPTION].
+  
+  Requirements:
+  - Use functional components with hooks
+  - Implement proper TypeScript interfaces for props
+  - Include JSDoc comments
+  - Use Tailwind CSS for styling
+  - Make component accessible (ARIA attributes)
+  - Add example usage in comments
+  
+  Component name: [COMPONENT_NAME]
+  ```
+  
+  **Best Practices**:
+  
+  - Always specify TypeScript for type safety
+  - Request accessibility features explicitly
+  - Mention styling framework (Tailwind, styled-components, etc.)
+  - Ask for example usage to understand component API
+  
+  ---
+  
+  # Documentation Prompts
+  
+  ## API Documentation Generator
+  
+  **Purpose**: Create comprehensive API documentation from code
+  
+  **Prompt**:
+  
+  ```
+  Generate API documentation for the following endpoint:
+  
+  [PASTE CODE HERE]
+  
+  Include:
+  - Endpoint description and purpose
+  - HTTP method and path
+  - Request parameters (path, query, body)
+  - Response format with status codes
+  - Example requests and responses (cURL and JavaScript)
+  - Error handling and error codes
+  - Authentication requirements
+  - Rate limiting information
+  
+  Format: OpenAPI 3.0 specification
+  ```
+  
+  **Output Quality Tips**:
+  
+  1. Provide complete function/route code, not just signature
+  2. Include any middleware or decorators used
+  3. Specify desired output format (OpenAPI, Markdown, etc.)
+  4. Request examples in multiple languages
+  
+  ---
+  
+  ## README Generator
+  
+  **Purpose**: Create professional README files for GitHub repositories
+  
+  **Prompt Template**:
+  
+  ```
+  Create a comprehensive README.md for a [PROJECT_TYPE] project called [PROJECT_NAME].
+  
+  Project description: [DESCRIPTION]
+  
+  Include these sections:
+  - Header with logo/title and badges
+  - Project description and features
+  - Installation instructions
+  - Quick start guide
+  - Usage examples
+  - API reference (if applicable)
+  - Configuration options
+  - Contributing guidelines
+  - License information
+  
+  Tone: Professional but friendly
+  Audience: Developers with [SKILL_LEVEL] experience
+  ```
+  
+  ---
+  
+  # Code Review Prompts
+  
+  ## Security Review
+  
+  **Purpose**: Identify security vulnerabilities in code
+  
+  **Prompt**:
+  
+  ```
+  Perform a security review of the following code:
+  
+  [PASTE CODE HERE]
+  
+  Check for:
+  - SQL injection vulnerabilities
+  - XSS (Cross-Site Scripting) risks
+  - CSRF (Cross-Site Request Forgery) issues
+  - Authentication/authorization flaws
+  - Insecure data storage
+  - API key or secret exposure
+  - Input validation problems
+  - Dependency vulnerabilities
+  
+  For each issue found, provide:
+  1. Severity level (Critical/High/Medium/Low)
+  2. Description of the vulnerability
+  3. Potential impact
+  4. Recommended fix with code example
+  ```
+  
+  **Notes**:
+  
+  - Always review AI suggestions with security team
+  - Don't blindly trust AI security assessments
+  - Use as first-pass review, not final audit
+  
+  ---
+  
+  ## Performance Optimization
+  
+  **Purpose**: Get suggestions for code performance improvements
+  
+  **Prompt**:
+  
+  ```
+  Analyze this code for performance optimization opportunities:
+  
+  [PASTE CODE HERE]
+  
+  Context:
+  - Language: [LANGUAGE]
+  - Expected load: [REQUESTS_PER_SECOND or DATA_SIZE]
+  - Current bottlenecks: [KNOWN_ISSUES]
+  
+  Provide:
+  1. List of performance issues (ranked by impact)
+  2. Optimized code for each issue
+  3. Expected performance improvement (with benchmarks if possible)
+  4. Trade-offs (readability, maintainability, etc.)
+  
+  Focus on: [algorithmic complexity, database queries, memory usage, caching]
+  ```
+  
+  ---
+  
+  # Data Analysis Prompts
+  
+  ## SQL Query Generator
+  
+  **Purpose**: Generate SQL queries from natural language
+  
+  **Prompt Template**:
+  
+  ```
+  Generate a SQL query for: [NATURAL_LANGUAGE_DESCRIPTION]
+  
+  Database schema:
+  [TABLE_DEFINITIONS]
+  
+  Requirements:
+  - Use PostgreSQL syntax
+  - Optimize for performance (include indexes used)
+  - Add comments explaining complex parts
+  - Include example output
+  - Suggest any indexes that would improve performance
+  ```
+  
+  **Example**:
+  
+  ```
+  Generate a SQL query for: Find top 10 customers by total purchase amount in the last 90 days
+  
+  Database schema:
+  - customers (id, name, email, created_at)
+  - orders (id, customer_id, total, created_at, status)
+  - order_items (id, order_id, product_id, quantity, price)
+  
+  Requirements:
+  - Use PostgreSQL syntax
+  - Optimize for performance (include indexes used)
+  - Add comments explaining complex parts
+  - Include example output
+  - Suggest any indexes that would improve performance
+  ```
+  
+  ---
+  
+  ## Data Visualization Recommendation
+  
+  **Purpose**: Get recommendations for data visualization approaches
+  
+  **Prompt**:
+  
+  ```
+  I have the following dataset:
+  
+  [DESCRIBE DATA STRUCTURE]
+  
+  I want to visualize: [GOAL]
+  
+  Recommend:
+  1. Best chart/graph type and why
+  2. JavaScript library to use (Chart.js, D3.js, Recharts, etc.)
+  3. Sample configuration/code
+  4. Best practices for this visualization type
+  5. Common pitfalls to avoid
+  
+  Audience: [TECHNICAL or NON-TECHNICAL]
+  Platform: [WEB, MOBILE, PRINT]
+  ```
+  
+  ---
+  
+  # Debugging Prompts
+  
+  ## Error Explanation
+  
+  **Purpose**: Understand and fix error messages
+  
+  **Prompt**:
+  
+  ```
+  Explain this error and how to fix it:
+  
+  Error message:
+  [PASTE ERROR MESSAGE]
+  
+  Context:
+  - Language/Framework: [DETAILS]
+  - What I was trying to do: [DESCRIPTION]
+  - Code that caused the error: [PASTE CODE]
+  - Environment: [OS, versions, etc.]
+  
+  Please provide:
+  1. Plain English explanation of what the error means
+  2. Root cause of the error
+  3. Step-by-step fix
+  4. Code example of the fixed version
+  5. How to prevent this error in the future
+  ```
+  
+  ---
+  
+  # Writing Prompts
+  
+  ## Technical Blog Post
+  
+  **Purpose**: Create engaging technical blog posts
+  
+  **Prompt Template**:
+  
+  ```
+  Write a technical blog post about [TOPIC].
+  
+  Target audience: [BEGINNER, INTERMEDIATE, ADVANCED] developers
+  
+  Structure:
+  - Catchy title and subtitle
+  - Introduction (hook the reader)
+  - Problem statement (why this matters)
+  - Solution explanation (with code examples)
+  - Step-by-step tutorial
+  - Best practices and tips
+  - Common pitfalls
+  - Conclusion with key takeaways
+  
+  Tone: [FORMAL, CONVERSATIONAL, EDUCATIONAL]
+  Length: [TARGET_WORD_COUNT] words
+  
+  Include:
+  - Code examples with syntax highlighting
+  - Diagrams (describe what diagrams to create)
+  - Real-world use cases
+  ```
+  
+  ---
+  
+  # Best Practices for Prompt Engineering
+  
+  ## 1. Be Specific
+  
+  ❌ **Bad**: "Write a function"  
+  ✅ **Good**: "Write a TypeScript function that validates email addresses, includes error handling, and has 5 unit tests"
+  
+  ## 2. Provide Context
+  
+  Always include:
+  - Programming language/framework
+  - Target audience or use case
+  - Constraints or requirements
+  - Expected output format
+  
+  ## 3. Use Examples
+  
+  When possible, provide examples of desired output. This helps the AI understand your expectations.
+  
+  ## 4. Iterate and Refine
+  
+  Don't expect perfection on the first try. Refine prompts based on results:
+  
+  - If output is too generic → Add more specific requirements
+  - If output is incorrect → Provide more context
+  - If output is too complex → Ask for simplification
+  
+  ## 5. Chain Prompts
+  
+  For complex tasks, break into steps:
+  
+  1. Generate initial code
+  2. Add error handling
+  3. Add tests
+  4. Add documentation
+  5. Optimize performance
+  
+  ## 6. Version Control Your Prompts
+  
+  - Track prompt versions in Git
+  - Note which prompts work best
+  - Share successful prompts with team
+  - Document prompt parameters and outcomes
+  
+  ---
+  
+  # Prompt Templates by Task
+  
+  ## Quick Reference Table
+  
+  | Task | Key Elements | Recommended Model |
+  |------|--------------|-------------------|
+  | Code Generation | Language, requirements, style guide | GPT-4, Claude 3.5 |
+  | Code Review | Code context, focus areas | GPT-4 |
+  | Documentation | Audience, format, examples | GPT-3.5, GPT-4 |
+  | Debugging | Error message, context, environment | GPT-4 |
+  | Data Analysis | Data structure, goal, constraints | GPT-4, Claude 3 |
+  | Writing | Audience, tone, structure | Claude 3.5, GPT-4 |
+  
+  ---
+  
+  # Measuring Prompt Effectiveness
+  
+  Track these metrics for your prompts:
+  
+  1. **Success Rate**: % of times prompt produces usable output
+  2. **Iteration Count**: Average number of refinements needed
+  3. **Token Efficiency**: Tokens used vs. output quality
+  4. **Time Saved**: Hours saved vs. manual approach
+  5. **Quality Score**: Team rating of output quality (1-5)
+  
+  ---
+  
+  # Conclusion
+  
+  Effective prompt engineering is a **skill that improves with practice**. Document your successful prompts, learn from failures, and continuously refine your approach.
+  
+  Remember:
+  - **AI is a tool**, not a replacement for human judgment
+  - **Always review** AI-generated code before using in production
+  - **Test thoroughly**, especially security-critical code
+  - **Share knowledge** with your team
+  
+  ## Resources
+  
+  - OpenAI Prompt Engineering Guide: https://platform.openai.com/docs/guides/prompt-engineering
+  - Anthropic Claude Prompting Guide: https://docs.anthropic.com/claude/docs/prompt-engineering
+  - Prompt Engineering Community: https://learnprompting.org
+}
+
+@doc {
+  # Version History
+  
+  ## v2.0 - October 15, 2025
+  
+  - Added data analysis and debugging sections
+  - Expanded best practices with examples
+  - Added quick reference table
+  - Included metrics for measuring effectiveness
+  
+  ## v1.5 - September 1, 2025
+  
+  - Added code review prompts
+  - Included security review templates
+  - Added performance optimization section
+  
+  ## v1.0 - August 1, 2025
+  
+  - Initial prompt library
+  - Code generation templates
+  - Documentation prompts
+  - Basic best practices
+}

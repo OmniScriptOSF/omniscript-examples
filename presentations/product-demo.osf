@@ -1,0 +1,530 @@
+// =============================================================================
+// Example: Product Demo
+// Category: Presentations
+// Description: Product showcase presentation with features and benefits
+// Features: Product highlights, screenshots, calls to action
+// Estimated time: Study example
+// =============================================================================
+
+@meta {
+  title: "CloudSync 3.0 - Product Demo";
+  author: "CloudSync Product Team";
+  date: "2025-10-15";
+  theme: modern;
+}
+
+@slide {
+  title: "CloudSync 3.0";
+  layout: TitleOnly;
+}
+
+@slide {
+  title: "Welcome!";
+  layout: TitleAndContent;
+  
+  ## Thank You for Joining Today's Demo
+  
+  **What we'll cover**:
+  
+  - 🎯 Key features and capabilities
+  - ⚡ Performance improvements
+  - 🔒 Security enhancements
+  - 💡 Real-world use cases
+  - 🚀 Live demonstration
+  
+  **Duration**: 30 minutes + Q&A
+}
+
+@slide {
+  title: "The Problem We Solve";
+  layout: TwoColumn;
+  
+  ## Without CloudSync
+  
+  ❌ Files scattered across devices  
+  ❌ Version confusion  
+  ❌ Email attachments mess  
+  ❌ Lost productivity  
+  ❌ Security risks
+  
+  ## With CloudSync
+  
+  ✅ All files in one place  
+  ✅ Always latest version  
+  ✅ Seamless collaboration  
+  ✅ Work from anywhere  
+  ✅ Enterprise-grade security
+}
+
+@slide {
+  title: "What is CloudSync?";
+  layout: TitleAndContent;
+  
+  **CloudSync** is an intelligent file synchronization platform that keeps your files in perfect harmony across all your devices.
+  
+  ### Core Capabilities
+  
+  - **Real-time Sync**: Changes appear instantly everywhere
+  - **Selective Sync**: Choose what to sync per device
+  - **Version History**: Restore any version up to 1 year
+  - **Offline Access**: Work without internet
+  - **Smart Bandwidth**: Optimizes network usage automatically
+}
+
+@slide {
+  title: "New in Version 3.0";
+  layout: TitleAndContent;
+  
+  ## Major Features
+  
+  ### 🚀 Smart Sync Technology
+  60% less bandwidth usage with intelligent delta compression
+  
+  ### 🎨 Redesigned Interface
+  Modern, intuitive UI with dark mode support
+  
+  ### 📊 Advanced Analytics
+  Track team usage, storage trends, and collaboration patterns
+  
+  ### 🔐 Zero-Knowledge Encryption
+  End-to-end encryption with client-side key management
+  
+  ### 🤖 AI-Powered Search
+  Find files using natural language queries
+}
+
+@slide {
+  title: "Smart Sync in Action";
+  layout: TitleAndContent;
+  
+  ## How It Works
+  
+  **Traditional Sync**:
+  - Uploads entire 100 MB file
+  - Takes 2-3 minutes on typical connection
+  - Uses full bandwidth
+  
+  **Smart Sync** (v3.0):
+  - Detects only 2 MB actually changed
+  - Uploads only changed blocks
+  - **Completes in 5 seconds**
+  - **97% bandwidth saved**
+  
+  *Perfect for large files: videos, CAD files, databases*
+}
+
+@slide {
+  title: "User Interface - Before & After";
+  layout: TwoColumn;
+  
+  ## Version 2.x
+  
+  - Cluttered sidebar
+  - Hidden settings
+  - Complex menus
+  - Light theme only
+  - Fixed layouts
+  
+  ## Version 3.0
+  
+  - Clean, minimal design
+  - Quick actions front & center
+  - Intuitive navigation
+  - Dark mode built-in
+  - Customizable workspace
+}
+
+@slide {
+  title: "Dark Mode";
+  layout: TitleAndContent;
+  
+  ## Beautiful. Productive. Easy on the Eyes.
+  
+  **Why Dark Mode Matters**:
+  
+  - 👀 Reduces eye strain during long work sessions
+  - 🔋 Saves battery life on OLED screens
+  - 🌙 Better for late-night work
+  - 🎨 Professional aesthetic
+  
+  **Smart Switching**:
+  - Auto-adjusts with system settings
+  - Schedule-based switching
+  - Per-application preferences
+}
+
+@slide {
+  title: "Advanced Analytics Dashboard";
+  layout: TitleAndContent;
+  
+  ## Visibility Into Your Workflow
+  
+  **Team Insights**:
+  - Who's syncing what
+  - Peak usage times
+  - Collaboration patterns
+  - Storage trends over time
+  
+  **Individual Metrics**:
+  - Files synced per day
+  - Bandwidth usage
+  - Most accessed files
+  - Version history usage
+  
+  *Perfect for team leads and administrators*
+}
+
+@slide {
+  title: "Zero-Knowledge Encryption";
+  layout: TitleAndContent;
+  
+  ## Your Data. Your Keys. Your Control.
+  
+  ### How It Works
+  
+  1. **You generate encryption keys** on your device
+  2. **Files encrypted before leaving** your computer
+  3. **CloudSync never sees your data** in plain text
+  4. **Only you can decrypt** your files
+  
+  ### Benefits
+  
+  ✅ Maximum privacy  
+  ✅ Compliance-ready (HIPAA, GDPR)  
+  ✅ Protection against breaches  
+  ✅ No backdoors, ever
+  
+  *Available on Pro and Business plans*
+}
+
+@slide {
+  title: "AI-Powered Search";
+  layout: TitleAndContent;
+  
+  ## Find Files Without Thinking
+  
+  **Natural Language Queries**:
+  
+  - *"Find the budget spreadsheet John sent last week"*
+  - *"Show me all PDFs about project Phoenix"*
+  - *"Where's that presentation with the blue graphs?"*
+  
+  **Semantic Understanding**:
+  - Understands context and intent
+  - Searches file content, not just names
+  - Learns from your habits
+  
+  **Lightning Fast**:
+  - Results in under 100ms
+  - Works across millions of files
+}
+
+@slide {
+  title: "Live Demo";
+  layout: TitleOnly;
+}
+
+@slide {
+  title: "Demo: Real-Time Sync";
+  layout: TitleAndContent;
+  
+  ## Watch It Happen Live
+  
+  **Setup**:
+  - Two devices side by side
+  - Same CloudSync account
+  - Same shared folder
+  
+  **Test**:
+  1. Edit file on Device A
+  2. Watch it appear on Device B (< 2 seconds)
+  3. Edit simultaneously → Conflict resolution
+  4. Delete file → Instant removal everywhere
+  
+  *Let's see it in action...*
+}
+
+@slide {
+  title: "Demo: Smart Bandwidth";
+  layout: TitleAndContent;
+  
+  ## Network Intelligence
+  
+  **Scenario**: Upload 500 MB video file
+  
+  **Traditional Method**:
+  - Time: 8 minutes
+  - Bandwidth: 500 MB used
+  - Network: Fully saturated
+  
+  **Smart Sync**:
+  - Detects previous version already uploaded
+  - Only uploads 20 MB difference
+  - Time: **35 seconds**
+  - Bandwidth: **96% saved**
+}
+
+@slide {
+  title: "Demo: Version History";
+  layout: TitleAndContent;
+  
+  ## Time Machine for Your Files
+  
+  **Steps**:
+  
+  1. Right-click any file
+  2. Select "Version History"
+  3. See complete timeline
+  4. Preview any version
+  5. Restore with one click
+  
+  **Retention**:
+  - Free: 30 days
+  - Pro: 90 days
+  - Business: 1 year
+}
+
+@slide {
+  title: "Use Case: Remote Teams";
+  layout: TitleAndContent;
+  
+  ## Perfect for Distributed Workforces
+  
+  **Acme Corp's Challenge**:
+  - 50 employees across 5 time zones
+  - Constant file sharing via email
+  - Version conflicts daily
+  - Security concerns with personal Dropbox
+  
+  **CloudSync Solution**:
+  - Centralized team workspace
+  - Real-time collaboration
+  - Access controls by department
+  - Audit logs for compliance
+  
+  **Results**: 70% reduction in email volume, zero security incidents
+}
+
+@slide {
+  title: "Use Case: Creative Agencies";
+  layout: TitleAndContent;
+  
+  ## Built for Large Media Files
+  
+  **Studio 7's Challenge**:
+  - 4K video files (100+ GB each)
+  - Slow uploads killing productivity
+  - Client review process bottleneck
+  
+  **CloudSync Solution**:
+  - Smart Sync for delta uploads
+  - Selective sync (designers only need current projects)
+  - Share links for client review
+  - Version history for revisions
+  
+  **Results**: 80% faster project turnaround
+}
+
+@slide {
+  title: "Use Case: Healthcare";
+  layout: TitleAndContent;
+  
+  ## HIPAA-Compliant Collaboration
+  
+  **MedCare Clinics' Challenge**:
+  - Patient data across 10 locations
+  - Strict compliance requirements
+  - Need offline access for field work
+  
+  **CloudSync Solution**:
+  - Zero-knowledge encryption
+  - Role-based access controls
+  - Offline mode for mobile clinics
+  - Detailed audit logs
+  
+  **Results**: Full HIPAA compliance, 40% faster patient care
+}
+
+@slide {
+  title: "Pricing Plans";
+  layout: TitleAndContent;
+  
+  ## Simple, Transparent Pricing
+  
+  ### Free
+  **$0/month**
+  - 5 GB storage
+  - 3 devices
+  - 30-day version history
+  - Community support
+  
+  ### Pro
+  **$9.99/month**
+  - 2 TB storage
+  - Unlimited devices
+  - 90-day version history
+  - Zero-knowledge encryption
+  - Priority support
+  
+  ### Business
+  **$15/user/month**
+  - Unlimited storage
+  - Advanced admin controls
+  - 1-year version history
+  - SSO integration
+  - Dedicated support
+  - Custom branding
+}
+
+@slide {
+  title: "What Customers Say";
+  layout: TitleAndContent;
+  
+  ## Trusted by 50,000+ Teams
+  
+  *"CloudSync transformed how our team collaborates. We've eliminated version conflicts entirely."*
+  — **Sarah Johnson, CTO at TechStart**
+  
+  *"The Smart Sync feature alone saved us thousands in bandwidth costs."*
+  — **Michael Chen, IT Director at GlobalCorp**
+  
+  *"Best decision we made for remote work. It just works."*
+  — **Emma Williams, Founder of CreativeHub**
+  
+  ⭐⭐⭐⭐⭐ **4.8/5 stars** on G2 (2,000+ reviews)
+}
+
+@slide {
+  title: "Security & Compliance";
+  layout: TwoColumn;
+  
+  ## Certifications
+  
+  - ✅ SOC 2 Type II
+  - ✅ HIPAA Compliant
+  - ✅ GDPR Compliant
+  - ✅ ISO 27001
+  - ✅ CCPA Compliant
+  
+  ## Security Features
+  
+  - 🔒 TLS 1.3 in transit
+  - 🔒 AES-256 at rest
+  - 🔒 2FA required
+  - 🔒 IP whitelisting
+  - 🔒 Device management
+}
+
+@slide {
+  title: "Integration Ecosystem";
+  layout: TitleAndContent;
+  
+  ## Works With Your Tools
+  
+  **Productivity**:
+  - Microsoft Office 365
+  - Google Workspace
+  - Slack
+  - Trello, Asana, Jira
+  
+  **Development**:
+  - GitHub, GitLab
+  - Docker
+  - CI/CD pipelines
+  
+  **Design**:
+  - Adobe Creative Cloud
+  - Figma
+  - Sketch
+  
+  **200+ integrations** via API
+}
+
+@slide {
+  title: "Roadmap Preview";
+  layout: TitleAndContent;
+  
+  ## Coming Soon
+  
+  ### Q4 2025
+  - 📱 Mobile app redesign
+  - 🎥 Built-in video preview
+  - 📝 Markdown editor
+  
+  ### Q1 2026
+  - 🤝 Real-time co-editing
+  - 🌐 Multi-region data centers
+  - 📊 Enhanced analytics
+  
+  ### Q2 2026
+  - 🎨 CloudSync Docs (Google Docs alternative)
+  - 🔌 Plugin marketplace
+  - 🌍 50+ language support
+}
+
+@slide {
+  title: "Getting Started is Easy";
+  layout: TitleAndContent;
+  
+  ## Three Simple Steps
+  
+  ### 1. Sign Up
+  Visit cloudsync.io/signup  
+  Free account, no credit card required
+  
+  ### 2. Download
+  Available for Windows, Mac, Linux  
+  Install takes < 2 minutes
+  
+  ### 3. Start Syncing
+  Drag files to CloudSync folder  
+  Automatic sync begins immediately
+  
+  **First 100 signups get 3 months Pro free!**
+}
+
+@slide {
+  title: "Questions?";
+  layout: TitleAndContent;
+  
+  ## We're Here to Help
+  
+  **Contact Us**:
+  
+  📧 Email: sales@cloudsync.io  
+  📞 Phone: 1-800-CLOUD-99  
+  💬 Live Chat: cloudsync.io/chat  
+  🌐 Website: cloudsync.io
+  
+  **Resources**:
+  
+  - 📖 Documentation: docs.cloudsync.io
+  - 🎥 Video Tutorials: youtube.com/cloudsync
+  - 👥 Community Forum: community.cloudsync.io
+  
+  **Schedule a personalized demo**: cloudsync.io/demo
+}
+
+@slide {
+  title: "Thank You!";
+  layout: TitleAndContent;
+  
+  ## Let's Get You Started
+  
+  **Special Offer for Today's Attendees**:
+  
+  🎁 **3 months Pro plan FREE**  
+  Use code: **DEMO2025**
+  
+  **Next Steps**:
+  
+  1. Create your free account
+  2. Download CloudSync
+  3. Start syncing in minutes
+  
+  ---
+  
+  **Questions? Let's talk now!**
+  
+  Visit: **cloudsync.io/start**
+}

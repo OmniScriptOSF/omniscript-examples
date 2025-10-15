@@ -1,0 +1,33 @@
+{
+  "name": "omniscript-examples",
+  "version": "1.0.0",
+  "description": "Comprehensive library of OmniScript Format (OSF) examples and templates",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "test": "npm run validate"
+  },
+  "keywords": [
+    "omniscript",
+    "osf",
+    "examples",
+    "templates",
+    "documentation"
+  ],
+  "author": {
+    "name": "Alphin Tom",
+    "email": "alpha912@github.com",
+    "url": "https://github.com/alpha912"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OmniScriptOSF/omniscript-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OmniScriptOSF/omniscript-examples/issues"
+  },
+  "homepage": "https://omniscriptosf.github.io",
+  "devDependencies": {
+    "omniscript-parser": "^0.6.0"
+  }
+}
