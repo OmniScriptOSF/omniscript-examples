@@ -81,8 +81,8 @@ npm run validate
 
 ### Convert an Example
 ```bash
-# Install OSF CLI globally
-npm install -g omniscript-cli
+# Install OSF CLI globally (v1.2.1)
+npm install -g omniscript-cli@1.2.1
 
 # Convert to PDF
 osf render getting-started/01-hello-world.osf --format pdf
@@ -92,6 +92,17 @@ osf render documents/technical-report.osf --format docx --theme corporate
 
 # Convert to PPTX
 osf render presentations/business-pitch.osf --format pptx --theme modern
+```
+
+### Try New v1.2 Features
+```bash
+# Create a document with @table blocks
+echo '@table { | A | B |\n| --- | --- |\n| 1 | 2 |\n}' > test.osf
+osf render test.osf --format html
+
+# Use @include for modular documents
+echo '@include { path: "./section.osf"; }' > main.osf
+osf parse main.osf
 ```
 
 ---
