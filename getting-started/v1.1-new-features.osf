@@ -1,0 +1,155 @@
+// File: getting-started/v1.1-new-features.osf
+// What: Showcase all new v1.1 formatting features
+// Why: Help users discover strikethrough, ordered lists, blockquotes, code blocks
+// RELEVANT FILES: ../README.md, parser README
+
+@meta {
+  title: "OmniScript v1.1 - New Features Showcase";
+  author: "OmniScript Team";
+  date: "2025-01-16";
+  version: "1.1";
+}
+
+@doc {
+  # Welcome to OmniScript v1.1!
+
+  This document showcases all the **new formatting capabilities** added in version 1.1.
+
+  ## What's New in v1.1
+
+  We've added powerful new formatting options while maintaining **100% backward compatibility** with v1.0.
+}
+
+@slide {
+  title: "✨ New Text Formatting";
+  
+  Text styling now includes strikethrough:
+  
+  - **Bold text** for emphasis
+  - *Italic text* for subtlety  
+  - __Underlined text__ for highlights
+  - ~~Strikethrough text~~ for deletions
+  
+  > Perfect for showing price changes, corrections, and revisions!
+}
+
+@slide {
+  title: "📝 Ordered Lists";
+  
+  Create numbered lists with automatic sequencing:
+  
+  1. First step - Plan your document
+  2. Second step - Write in OSF format
+  3. Third step - Export to your target format
+  4. Fourth step - ~~Manually format~~ Enjoy automatic formatting!
+  
+  > Ordered lists make instructions crystal clear.
+}
+
+@slide {
+  title: "💬 Blockquotes";
+  
+  Emphasize important information with blockquotes:
+  
+  > "OmniScript has transformed how we handle documentation. 
+  > The new v1.1 features make it even better!"
+  > — Sarah Chen, Technical Writer
+  
+  Perfect for:
+  - Customer testimonials
+  - Important warnings
+  - Featured quotes
+  - Key takeaways
+}
+
+@slide {
+  title: "💻 Code Blocks";
+  
+  Display code with proper formatting and syntax highlighting:
+  
+  ```typescript
+  import { parse, serialize } from 'omniscript-parser';
+  
+  const doc = parse(osfContent);
+  const output = serialize(doc);
+  ```
+  
+  Supports all major languages with preserved indentation!
+}
+
+@slide {
+  title: "🎯 Real-World Example";
+  
+  ## Product Pricing Updates
+  
+  Our pricing has been optimized:
+  
+  1. ~~Starter Plan: $29/month~~ **Now $19/month**
+  2. ~~Pro Plan: $99/month~~ **Now $79/month**
+  3. Enterprise: Contact sales *(no change)*
+  
+  > "Best value in the market!" - Industry Analyst
+  
+  Implementation code:
+  
+  ```javascript
+  const pricing = {
+    starter: 19,  // was 29
+    pro: 79       // was 99
+  };
+  ```
+}
+
+@slide {
+  title: "🔐 Security Improvements";
+  
+  v1.1 also includes important security enhancements:
+  
+  - ✅ HTML XSS prevention (all output sanitized)
+  - ✅ Unterminated string detection
+  - ✅ Enhanced input validation
+  
+  Your documents are safer than ever!
+}
+
+@doc {
+  ## Unicode Support
+
+  v1.1 adds full unicode escape sequence support:
+
+  - Checkmarks: ✓ ✔ ✗ ✘
+  - Arrows: → ← ↑ ↓
+  - Symbols: © ® ™ €
+  - Emoji: 🎉 🚀 ✨ 🔒
+
+  All these characters serialize correctly and maintain fidelity through parse/serialize cycles.
+
+  ## Position Tracking
+
+  Error messages now pinpoint exact locations:
+
+  ```
+  Error: Missing closing } for block meta at 15:42
+  Error: Expected identifier starting with a letter at 8:5
+  Error: Invalid number format at 12:18
+  ```
+
+  Makes debugging **10x faster**!
+
+  ## Try It Yourself
+
+  Use this document to test all v1.1 features:
+
+  ```bash
+  # Render to HTML with new formatting
+  osf render v1.1-new-features.osf --output showcase.html
+  
+  # Export to Markdown with preserved formatting
+  osf export v1.1-new-features.osf --target md --output showcase.md
+  
+  # Generate PDF with all features
+  osf render v1.1-new-features.osf --format pdf --output showcase.pdf
+  ```
+
+  Happy documenting with OmniScript v1.1! 🚀
+}
