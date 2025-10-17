@@ -28,6 +28,6 @@
   },
   "homepage": "https://omniscriptosf.github.io",
   "devDependencies": {
-    "omniscript-parser": "^0.6.0"
+    "omniscript-parser": "^1.2.0"
   }
 }

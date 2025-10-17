@@ -36,6 +36,19 @@ Data analysis and tracking sheets:
 - **[expense-report.osf](spreadsheets/expense-report.osf)** - Expense tracking with formulas
 - **[inventory-management.osf](spreadsheets/inventory-management.osf)** - Inventory system
 
+### 📋 Tables (v1.2+)
+Professional tables with styling and alignment:
+- **[basic-table.osf](tables/basic-table.osf)** - Simple product catalog with default styling
+- **[styled-table.osf](tables/styled-table.osf)** - Examples of all three style variants
+- **[sales-report.osf](tables/sales-report.osf)** - Complete sales report with multiple tables
+
+### 🔗 Modular Documents (v1.2+)
+Document composition using @include directive:
+- **[main.osf](modular/main.osf)** - Main document including multiple sections
+- **[sections/intro.osf](modular/sections/intro.osf)** - Executive summary section
+- **[sections/body.osf](modular/sections/body.osf)** - Technical implementation section
+- **[sections/conclusion.osf](modular/sections/conclusion.osf)** - Results and recommendations
+
 ### 🎯 Combined
 Multi-format documents demonstrating OSF's versatility:
 - **[business-report.osf](combined/business-report.osf)** - Doc + Slides + Sheets in one file

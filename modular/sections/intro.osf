@@ -1,0 +1,26 @@
+// File: omniscript-examples/modular/sections/intro.osf
+// What: Introduction section for modular document
+// Why: Demonstrate section composition
+// Related: main.osf, body.osf, conclusion.osf
+
+@doc {
+  # Executive Summary
+  
+  This project successfully delivered a new customer portal with enhanced features
+  and improved performance. The system now serves **50,000+ active users** with
+  **99.9% uptime**.
+  
+  ## Project Overview
+  
+  - **Duration**: 8 months (January - August 2025)
+  - **Team Size**: 12 members
+  - **Budget**: $850,000
+  - **Status**: ✓ Completed on time and under budget
+  
+  ## Key Achievements
+  
+  1. Reduced page load time by 65%
+  2. Increased mobile usage by 120%
+  3. Improved customer satisfaction score from 7.2 to 8.9
+  4. Deployed to 5 regions with zero downtime
+}

@@ -1,0 +1,29 @@
+// File: omniscript-examples/tables/basic-table.osf
+// What: Basic table example with default styling
+// Why: Demonstrate simple table usage
+// Related: sales-report.osf, styled-table.osf
+
+@meta {
+  title: "Basic Table Example";
+  author: "Documentation Team";
+  date: "2025-10-17";
+}
+
+@doc {
+  # Simple Product Catalog
+  
+  Basic table showing product information with default styling.
+}
+
+@table {
+  | Product | Price | Stock |
+  | --- | --- | --- |
+  | Widget A | $19.99 | 150 |
+  | Widget B | $24.99 | 87 |
+  | Widget C | $29.99 | 203 |
+  | Widget D | $34.99 | 45 |
+}
+
+@doc {
+  Tables use Markdown pipe syntax for easy editing and Git-friendly diffs.
+}

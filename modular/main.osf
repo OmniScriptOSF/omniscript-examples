@@ -1,0 +1,27 @@
+// File: omniscript-examples/modular/main.osf
+// What: Main document demonstrating @include directive
+// Why: Show how to compose documents from multiple files
+// Related: sections/intro.osf, sections/body.osf, sections/conclusion.osf
+
+@meta {
+  title: "Complete Project Report";
+  author: "Project Team";
+  date: "2025-10-17";
+  description: "Comprehensive project documentation using modular composition";
+}
+
+@include { path: "./sections/intro.osf"; }
+
+@include { path: "./sections/body.osf"; }
+
+@include { path: "./sections/conclusion.osf"; }
+
+@doc {
+  ---
+  
+  **Document composed from multiple files using @include directive**
+  
+  - intro.osf: Executive summary and project overview
+  - body.osf: Technical details and implementation
+  - conclusion.osf: Results and recommendations
+}

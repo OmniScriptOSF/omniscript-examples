@@ -1,0 +1,45 @@
+// File: omniscript-examples/modular/sections/body.osf
+// What: Body section with technical details
+// Why: Demonstrate technical content in modular docs
+// Related: main.osf, intro.osf, conclusion.osf
+
+@doc {
+  # Technical Implementation
+  
+  ## Architecture
+  
+  The new portal uses a microservices architecture with:
+  - React 18 frontend
+  - Node.js 22 backend services
+  - PostgreSQL 17 database
+  - Redis caching layer
+  - Docker containerization
+}
+
+@table {
+  caption: "Performance Metrics - Before vs After";
+  style: "bordered";
+  alignment: ["left", "right", "right", "center"];
+  
+  | Metric | Before | After | Improvement |
+  | --- | --- | --- | --- |
+  | Page Load Time | 3.2s | 1.1s | -65% ↓ |
+  | Time to Interactive | 4.8s | 1.6s | -67% ↓ |
+  | Mobile Performance | 45 | 92 | +104% ↑ |
+  | SEO Score | 72 | 96 | +33% ↑ |
+}
+
+@doc {
+  ## Security Enhancements
+  
+  - Multi-factor authentication (MFA)
+  - OAuth 2.0 with PKCE
+  - OWASP Top 10 compliance
+  - Automated security scanning in CI/CD
+  - Regular penetration testing
+  
+  ## Deployment Strategy
+  
+  Blue-green deployment with automated rollback capability ensured zero-downtime
+  updates across all regions.
+}

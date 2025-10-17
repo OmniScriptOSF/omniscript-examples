@@ -1,0 +1,91 @@
+// File: omniscript-examples/tables/styled-table.osf
+// What: Table examples showing different style variants
+// Why: Demonstrate table styling options
+// Related: basic-table.osf, sales-report.osf
+
+@meta {
+  title: "Table Styling Examples";
+  author: "Documentation Team";
+  date: "2025-10-17";
+}
+
+@doc {
+  # Table Style Variants
+  
+  OmniScript supports three table styles: bordered, striped, and minimal.
+}
+
+@doc {
+  ## Bordered Style (Default)
+  
+  Tables with visible borders around all cells.
+}
+
+@table {
+  caption: "Product Comparison - Bordered";
+  style: "bordered";
+  alignment: ["left", "center", "center", "right"];
+  
+  | Feature | Basic | Pro | Enterprise |
+  | --- | --- | --- | --- |
+  | Users | 5 | 50 | Unlimited |
+  | Storage | 10 GB | 100 GB | 1 TB |
+  | Support | Email | Priority | 24/7 Phone |
+  | Price | $9/mo | $49/mo | $199/mo |
+}
+
+@doc {
+  ## Striped Style
+  
+  Alternating row colors for better readability.
+}
+
+@table {
+  caption: "Project Timeline - Striped";
+  style: "striped";
+  alignment: ["left", "center", "center", "left"];
+  
+  | Phase | Start Date | End Date | Status |
+  | --- | --- | --- | --- |
+  | Planning | 2025-01-01 | 2025-01-31 | ✓ Complete |
+  | Design | 2025-02-01 | 2025-03-15 | ✓ Complete |
+  | Development | 2025-03-16 | 2025-08-31 | ✓ Complete |
+  | Testing | 2025-09-01 | 2025-10-15 | ✓ Complete |
+  | Launch | 2025-10-16 | 2025-10-31 | → In Progress |
+}
+
+@doc {
+  ## Minimal Style
+  
+  Clean, minimal borders for modern aesthetic.
+}
+
+@table {
+  caption: "Team Directory - Minimal";
+  style: "minimal";
+  alignment: ["left", "left", "center", "left"];
+  
+  | Name | Role | Location | Email |
+  | --- | --- | --- | --- |
+  | Alice Johnson | Engineering Lead | San Francisco | alice@example.com |
+  | Bob Smith | Product Manager | New York | bob@example.com |
+  | Carol White | Designer | London | carol@example.com |
+  | David Lee | DevOps Engineer | Singapore | david@example.com |
+}
+
+@doc {
+  ## Column Alignment
+  
+  Control text alignment per column: `left`, `center`, or `right`.
+}
+
+@table {
+  caption: "Alignment Examples";
+  alignment: ["left", "center", "right"];
+  
+  | Left Aligned | Center Aligned | Right Aligned |
+  | --- | --- | --- |
+  | Text | Text | Text |
+  | More text | More text | More text |
+  | Even more | Even more | Even more |
+}

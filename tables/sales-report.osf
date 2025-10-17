@@ -1,0 +1,84 @@
+// File: omniscript-examples/tables/sales-report.osf
+// What: Sales report example demonstrating @table blocks
+// Why: Show how to create professional sales reports with tables
+// Related: basic-table.osf, styled-table.osf
+
+@meta {
+  title: "Q4 2025 Sales Report";
+  author: "Sales Team";
+  date: "2025-10-17";
+  description: "Quarterly sales performance by region and product";
+}
+
+@doc {
+  # Executive Summary
+  
+  This report presents Q4 2025 sales performance across all regions and product lines.
+  Overall revenue increased by **18%** compared to Q3 2025.
+}
+
+@table {
+  caption: "Sales by Region - Q4 2025";
+  style: "bordered";
+  alignment: ["left", "right", "center", "right"];
+  
+  | Region | Revenue | Growth | Status |
+  | --- | --- | --- | --- |
+  | North America | $2,450,000 | +22% | ✓ Exceeds Target |
+  | Europe | $1,890,000 | +15% | ✓ Meets Target |
+  | Asia Pacific | $3,120,000 | +28% | ✓ Exceeds Target |
+  | Latin America | $890,000 | +8% | → Below Target |
+  | Middle East | $675,000 | +12% | → Below Target |
+}
+
+@doc {
+  ## Product Line Performance
+  
+  Our flagship products continue to drive growth, with cloud services showing exceptional results.
+}
+
+@table {
+  caption: "Revenue by Product Line";
+  style: "striped";
+  alignment: ["left", "right", "right", "center"];
+  
+  | Product | Q3 2025 | Q4 2025 | Change |
+  | --- | --- | --- | --- |
+  | Cloud Services | $3,200,000 | $4,100,000 | +28% ↑ |
+  | Enterprise Software | $2,800,000 | $3,150,000 | +13% ↑ |
+  | Professional Services | $1,450,000 | $1,575,000 | +9% ↑ |
+  | Hardware | $875,000 | $900,000 | +3% → |
+}
+
+@doc {
+  ## Top Performing Representatives
+  
+  Recognition for outstanding individual performance this quarter.
+}
+
+@table {
+  caption: "Top 5 Sales Representatives";
+  style: "minimal";
+  alignment: ["left", "center", "right", "right"];
+  
+  | Name | Region | Deals Closed | Total Revenue |
+  | --- | --- | --- | --- |
+  | Sarah Chen | Asia Pacific | 47 | $1,250,000 |
+  | Marcus Johnson | North America | 42 | $1,180,000 |
+  | Elena Rodriguez | Europe | 38 | $965,000 |
+  | Ahmed Hassan | Middle East | 35 | $820,000 |
+  | Maria Silva | Latin America | 31 | $710,000 |
+}
+
+@doc {
+  ## Recommendations
+  
+  1. **Expand in Asia Pacific**: Highest growth rate warrants additional investment
+  2. **Support Latin America**: Provide additional training and resources
+  3. **Cloud Services Focus**: Continue prioritizing cloud product development
+  4. **Recognition Program**: Celebrate top performers at annual conference
+  
+  ---
+  
+  *Report prepared by Sales Analytics Team - October 2025*
+}
