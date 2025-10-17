@@ -4,7 +4,7 @@
   "description": "Comprehensive library of OmniScript Format (OSF) examples and templates",
   "scripts": {
     "validate": "node scripts/validate.js",
-    "test": "npm run validate"
+    "test": "bun run validate"
   },
   "keywords": [
     "omniscript",
@@ -27,6 +27,11 @@
     "url": "https://github.com/OmniScriptOSF/omniscript-examples/issues"
   },
   "homepage": "https://omniscriptosf.github.io",
+  "engines": {
+    "node": ">=22.20.0",
+    "bun": ">=1.3.0"
+  },
+  "packageManager": "bun@1.3.0",
   "devDependencies": {
     "omniscript-parser": "^1.2.0"
   }
