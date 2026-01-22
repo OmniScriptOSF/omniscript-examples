@@ -14,6 +14,7 @@ Perfect for beginners learning OSF syntax:
 - **[02-basic-document.osf](getting-started/02-basic-document.osf)** - Formatting, headings, lists (5 min) ⏱️
 - **[03-simple-presentation.osf](getting-started/03-simple-presentation.osf)** - Slides with layouts (5 min) ⏱️
 - **[04-basic-spreadsheet.osf](getting-started/04-basic-spreadsheet.osf)** - Data tables and formulas (10 min) ⏱️
+- **[v1.1-new-features.osf](getting-started/v1.1-new-features.osf)** - v1.1 syntax highlights
 
 ### 📄 Documents
 Professional document examples:
@@ -33,8 +34,6 @@ Business and educational slide decks:
 Data analysis and tracking sheets:
 - **[budget-tracker.osf](spreadsheets/budget-tracker.osf)** - Personal/business budget
 - **[sales-dashboard.osf](spreadsheets/sales-dashboard.osf)** - Sales metrics dashboard
-- **[expense-report.osf](spreadsheets/expense-report.osf)** - Expense tracking with formulas
-- **[inventory-management.osf](spreadsheets/inventory-management.osf)** - Inventory system
 
 ### 📋 Tables (v1.3+)
 Professional tables with styling and alignment:
@@ -52,22 +51,10 @@ Document composition using @include directive:
 ### 🎯 Combined
 Multi-format documents demonstrating OSF's versatility:
 - **[business-report.osf](combined/business-report.osf)** - Doc + Slides + Sheets in one file
-- **[project-proposal.osf](combined/project-proposal.osf)** - Comprehensive project proposal
-- **[annual-report.osf](combined/annual-report.osf)** - Full annual business report
-
-### ⚡ Advanced
-Complex examples showcasing advanced features:
-- **[complex-formulas.osf](advanced/complex-formulas.osf)** - Advanced Excel-style formulas
-- **[nested-tables.osf](advanced/nested-tables.osf)** - Complex table structures
-- **[multi-theme.osf](advanced/multi-theme.osf)** - Theme switching demonstration
-- **[large-dataset.osf](advanced/large-dataset.osf)** - Performance testing with large data
 
 ### 💡 Use Cases
 Real-world application scenarios:
 - **[llm-prompts.osf](use-cases/llm-prompts.osf)** - AI/LLM prompt documentation
-- **[api-documentation.osf](use-cases/api-documentation.osf)** - Technical API docs
-- **[classroom-materials.osf](use-cases/classroom-materials.osf)** - Educational content
-- **[personal-finance.osf](use-cases/personal-finance.osf)** - Personal finance tracking
 
 ---
 
@@ -198,16 +185,16 @@ git push origin add-example-name
 ### By Feature
 - **Markdown formatting**: `02-basic-document.osf`
 - **Slide layouts**: `03-simple-presentation.osf`
-- **Formulas**: `04-basic-spreadsheet.osf`, `complex-formulas.osf`
-- **Multi-format**: All files in `combined/` folder
-- **Themes**: `multi-theme.osf`
-- **Large scale**: `large-dataset.osf`
+- **Formulas**: `04-basic-spreadsheet.osf`, `budget-tracker.osf`
+- **Tables**: `basic-table.osf`, `styled-table.osf`, `sales-report.osf`
+- **Modular includes**: `modular/main.osf`
+- **Multi-format**: `combined/business-report.osf`
 
 ### By Use Case
 - **Business**: `business-pitch.osf`, `quarterly-review.osf`, `business-report.osf`
-- **Education**: `training-slides.osf`, `classroom-materials.osf`
-- **Technical**: `technical-report.osf`, `api-documentation.osf`, `user-manual.osf`
-- **Personal**: `meeting-notes.osf`, `personal-finance.osf`, `budget-tracker.osf`
+- **Education**: `training-slides.osf`
+- **Technical**: `technical-report.osf`, `user-manual.osf`
+- **Personal**: `meeting-notes.osf`, `budget-tracker.osf`
 - **AI/LLM**: `llm-prompts.osf`
 
 ---

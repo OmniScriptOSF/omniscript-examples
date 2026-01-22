@@ -85,8 +85,9 @@ Go to your fork on GitHub and click **Compare & pull request**.
 - `documents/` - Document examples
 - `presentations/` - Presentation examples
 - `spreadsheets/` - Spreadsheet examples
+- `tables/` - Table-focused examples
+- `modular/` - Modular documents with includes
 - `combined/` - Multi-format examples
-- `advanced/` - Complex examples
 - `use-cases/` - Real-world scenarios
 
 ---
