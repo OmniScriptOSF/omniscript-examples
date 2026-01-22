@@ -1,14 +1,15 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "omniscript-examples",
       "devDependencies": {
-        "omniscript-parser": "^1.2.0",
+        "omniscript-parser": "^1.3.0",
       },
     },
   },
   "packages": {
-    "omniscript-parser": ["omniscript-parser@1.2.0", "", {}, "sha512-nLrafd0TSXhkBnPWAy09JlNkvsaBx+j8by+0VBhKOxDPSOXqf9Kv3ZlavYNATnTu6xMOsooBDaX3X5LrTsCK4w=="],
+    "omniscript-parser": ["omniscript-parser@1.3.0", "", {}, "sha512-qccueOaGUeEfbKzPxDFjSrLEVhs4lurEWVKy6YwUymQndMsU5uKe+Dp69bqwKuicNEy8OFmZ5106/ALF09ff0w=="],
   }
 }

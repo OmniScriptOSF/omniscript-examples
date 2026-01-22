@@ -36,13 +36,13 @@ Data analysis and tracking sheets:
 - **[expense-report.osf](spreadsheets/expense-report.osf)** - Expense tracking with formulas
 - **[inventory-management.osf](spreadsheets/inventory-management.osf)** - Inventory system
 
-### 📋 Tables (v1.2+)
+### 📋 Tables (v1.3+)
 Professional tables with styling and alignment:
 - **[basic-table.osf](tables/basic-table.osf)** - Simple product catalog with default styling
 - **[styled-table.osf](tables/styled-table.osf)** - Examples of all three style variants
 - **[sales-report.osf](tables/sales-report.osf)** - Complete sales report with multiple tables
 
-### 🔗 Modular Documents (v1.2+)
+### 🔗 Modular Documents (v1.3+)
 Document composition using @include directive:
 - **[main.osf](modular/main.osf)** - Main document including multiple sections
 - **[sections/intro.osf](modular/sections/intro.osf)** - Executive summary section
@@ -94,8 +94,8 @@ npm run validate
 
 ### Convert an Example
 ```bash
-# Install OSF CLI globally (v1.2.1)
-npm install -g omniscript-cli@1.2.1
+# Install OSF CLI globally (v1.3.0)
+npm install -g omniscript-cli@1.3.0
 
 # Convert to PDF
 osf render getting-started/01-hello-world.osf --format pdf
@@ -107,7 +107,7 @@ osf render documents/technical-report.osf --format docx --theme corporate
 osf render presentations/business-pitch.osf --format pptx --theme modern
 ```
 
-### Try New v1.2 Features
+### Try New v1.3 Features
 ```bash
 # Create a document with @table blocks
 echo '@table { | A | B |\n| --- | --- |\n| 1 | 2 |\n}' > test.osf
